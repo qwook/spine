@@ -38,3 +38,5 @@ ehthumbs.db
 Thumbs.db
 
 release/*
+build/spine.xcodeproj/xcuserdata
+build/spine.xcodeproj/xcuserdata/*
