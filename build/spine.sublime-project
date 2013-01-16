@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"path": "../src"
+		},
+		{
+			"path": "../common"
+		}
+	],
+    "settings":
+    {
+        "sublimeclang_options":
+        [
+             "-I../common/",
+             "-I../src/"
+        ]
+    }
+}

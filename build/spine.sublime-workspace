@@ -1,0 +1,683 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"IMo",
+				"IModuleManager	class"
+			],
+			[
+				"semico",
+				"semicolon_ignore"
+			],
+			[
+				"conv",
+				"case_conv"
+			],
+			[
+				"lgl",
+				"lGLU"
+			],
+			[
+				"selete",
+				"selectedPiece"
+			],
+			[
+				"te",
+				"TestModel"
+			],
+			[
+				"cur",
+				"currentObjId"
+			],
+			[
+				"frames",
+				"frames"
+			],
+			[
+				"fra",
+				"Frames"
+			],
+			[
+				"Frames",
+				"frames"
+			],
+			[
+				"concom",
+				"concommandList"
+			],
+			[
+				"conc",
+				"concommandList"
+			],
+			[
+				"Hold",
+				"HoldingFrame"
+			],
+			[
+				"Dragging",
+				"DraggingFrame"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"DragFrame",
+				"DragFrameMouseX"
+			],
+			[
+				"OnMouse",
+				"OnMouseReleased"
+			],
+			[
+				"N",
+				"newOffers"
+			],
+			[
+				"oppo",
+				"opponent_id"
+			],
+			[
+				"game",
+				"game_state"
+			],
+			[
+				"g",
+				"gScore"
+			],
+			[
+				"get",
+				"getLineNumber"
+			],
+			[
+				"t",
+				"Test"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/henrytran/Programming/Spine/makefile",
+			"settings":
+			{
+				"buffer_size": 819,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/henrytran/Programming/Spine/src/medula.cpp",
+			"settings":
+			{
+				"buffer_size": 2512,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/henrytran/Programming/Spine/src/module.cpp",
+			"settings":
+			{
+				"buffer_size": 473,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spine.sublime-project",
+			"settings":
+			{
+				"buffer_size": 217,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/henrytran/Programming/Spine/common/module.h",
+			"settings":
+			{
+				"buffer_size": 364,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/C++/C++.sublime-build",
+	"command_palette":
+	{
+		"height": 107.0,
+		"selected_items":
+		[
+			[
+				"Sublm",
+				"Preferences: SublimeClang Settings – User"
+			],
+			[
+				"SublimeClang",
+				"Preferences: SublimeClang Settings – User"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/henrytran/Library/Application Support/Sublime Text 2/Packages/User/SublimeClang.sublime-settings",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/include/modulesystem.h",
+		"/Users/henrytran/Programming/Spine/src/module.cpp",
+		"/Users/henrytran/Programming/faceTracking/makefile",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/plugins/mapxml/plugin.cpp",
+		"/Users/henrytran/Programming/Spine/medula.cpp",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/libs/modulesystem/moduleregistry.h",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/include/modulesystem.cpp",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/radiant/plugin.cpp",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/radiant/pluginapi.cpp",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/radiant/pluginmanager.cpp",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/radiant/pluginmanager.d",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/radiant/pluginmanager.h",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/radiant/patchmodule.cpp",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/libs/moduleobservers.cpp",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/libs/modulesystem/singletonmodule.h",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/libs/modulesystem/modulesmap.h",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/libs/modulesystem/singletonmodule.cpp",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/libs/modulesystem/modulesmap.cpp",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/libs/modulesystem/moduleregistry.cpp",
+		"/Users/henrytran/btfwp/space/client/globals.coffee",
+		"/Users/henrytran/btfwp/space/client/objects/baseObject.coffee",
+		"/Users/henrytran/btfwp/space/client/default.less",
+		"/Users/henrytran/btfwp/space/client/input.coffee",
+		"/Users/henrytran/btfwp/space/client/home_tpl.jade",
+		"/Users/henrytran/btfwp/space/client/objects/button.coffee",
+		"/Users/henrytran/btfwp/space/client/index.coffee",
+		"/Users/henrytran/btfwp/space/rakefile",
+		"/Users/henrytran/Web Design/konix/konix.html",
+		"/Users/henrytran/Library/Application Support/Sublime Text 2/Packages/User/Lua.sublime-build",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/install/NetRadiant.app/Contents/MacOS/install/pango.modules",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/radiant/renderstate.cpp",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/include/irender.h",
+		"/Users/henrytran/Programming/netradiant/NetRadiant/install/NetRadiant.app/Contents/MacOS/install/q2w.game/game.xlink",
+		"/Users/henrytran/.darkradiant/user.xml",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/xmlutil/MissingXMLNodeException.h",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/include/ifiletypes.h",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/filetypes/FileTypeRegistry.cpp",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/filetypes/FileTypeRegistry.h",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/radiant/modulesystem/ModuleRegistry.cpp",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/scenegraph/SceneGraph.cpp",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/scenegraph/SceneGraph.h",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/include/imodule.h",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/radiant/modulesystem/ModuleLoader.cpp",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/entitylist/EntityList.h",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/entitylist/EntityListModule.cpp",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/include/iregistry.h",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/xmlutil/XPathException.h",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/xmlutil/InvalidNodeException.h",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/xmlutil/Document.cpp",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/xmlutil/Node.cpp",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/xmlregistry/XMLRegistry.cpp",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/xmlregistry/XMLRegistryModule.cpp",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/xmlregistry/RegistryTree.cpp",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/gtkutil/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/math/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/picomodel/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/scene/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/xmlutil/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/archivezip/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/commandsystem/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.conversation/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.difficulty/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.editing/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.gui/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.objectives/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.stimresponse/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/eclassmgr/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/eclasstree/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/entity/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/entitylist/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/eventmanager/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/filetypes/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/filters/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/fonts/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/grid/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/image/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/mapdoom3/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/md5model/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/model/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/particles/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/scenegraph/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/script/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/shaders/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/skins/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/sound/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/uimanager/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/undo/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/vfspk3/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/wavefront/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/xmlregistry/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/radiant/Makefile",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/ddslib/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/gtkutil/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/math/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/picomodel/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/scene/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/xmlutil/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/archivezip/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/commandsystem/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.conversation/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.difficulty/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.editing/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.gui/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.objectives/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.stimresponse/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/eclassmgr/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/eclasstree/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/entity/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/entitylist/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/eventmanager/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/filetypes/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/filters/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/fonts/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/grid/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/image/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/mapdoom3/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/md5model/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/model/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/particles/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/scenegraph/Makefile.in",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/script/Makefile.in"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/henrytran/Programming/netradiant/NetRadiant",
+			"/Users/henrytran/Programming/darkradiant/DarkRadiant"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"UnloadModuleFn",
+			"style",
+			"print(",
+			"tokens",
+			"op_not",
+			"op_sub",
+			"op_not",
+			"operation_negative",
+			"print",
+			"equation",
+			"png",
+			"STRING_CONSTANT",
+			"renderstate",
+			"Directory_forEach",
+			"Radiant_loadModulesFromRoot",
+			"registerMo",
+			"Radiant_Construct",
+			"GlobalModuleServer_Initialise",
+			"to_lower",
+			"_",
+			"FileTypePattern",
+			"shared",
+			"SceneGraphModulePtr",
+			"FileTypeRegistryPtr",
+			"EntityListModulePtr",
+			"FileTypeRegistryPtr",
+			"registerModule",
+			"register",
+			"free",
+			"malloc",
+			"module",
+			"registerModule",
+			"XML",
+			"ld",
+			"LD_",
+			"ld",
+			"alloca",
+			"LDFla",
+			"LDFLAG",
+			"LINKC",
+			"LINK",
+			"linker",
+			"GLEW_LIBS = @GLEW_LIBS@\nGLIB_CFLAGS = -I/opt/local/include/glib-2.0 -I/opt/local/lib/glib-2.0/include -I/opt/local/include  \nGLIB_LIBS = -L/opt/local/lib -lglib-2.0 -lintl  \nGLU_LIBS = @GLU_LIBS@\nGL_LIBS = @GL_LIBS@",
+			"BOOST_FILESYSTEM_LDFLAGS = @BOOST_FILESYSTEM_LDFLAGS@\nBOOST_FILESYSTEM_LDPATH = @BOOST_FILESYSTEM_LDPATH@\nBOOST_FILESYSTEM_LIBS = @BOOST_FILESYSTEM_LIBS@",
+			"@",
+			"LDFLAGS =  -Wl,-z,defs",
+			"LD = /usr/llvm-gcc-4.2/libexec/gcc/i686-apple-darwin11/4.2.1/ld",
+			"-z",
+			"CC = gcc\nCCDEPMODE = depmode=gcc3\nCFLAGS = -g -O2 -DNDEBUG -g -O2 -Wall -Wno-unused-variable -Werror=return-type\nCPP = gcc -E\nCPPFLAGS = -I/opt/local/include -DPOSIX -std=c++11\nCXX = g++\nCXXCPP = g++ -E\nCXXDEPMODE = depmode=gcc3\nCXXFLAGS = -g -O2 -DNDEBUG  -Wall -Wno-unused-variable -Werror=return-type\nCYGPATH_W = echo",
+			"cc1plus",
+			"CXX",
+			"linker",
+			"CC",
+			"compiler",
+			"GCC_CXX",
+			"GCC",
+			"GPP",
+			"CPPFLAGS",
+			"defs",
+			"g++",
+			"gcc",
+			"c++0x",
+			"0x",
+			"C++",
+			"c++",
+			"c++0-0x",
+			"cc1",
+			"c++0x",
+			"c++",
+			"std=",
+			"/opt/",
+			"prefix",
+			"python_scripting",
+			"BOOST_FILESYSTEM",
+			"GLEW",
+			"boost_cv_lib_filesystem_LDFLAGS",
+			"flags to link",
+			"boost_cv_lib_filesystem",
+			"BOOST_CPPFLAGS",
+			"EPREFIX",
+			"/usr",
+			"lib/",
+			"prefix",
+			"\nchar jpeg_start_compress ();\nint\nmain ()\n{\nreturn jpeg_start_compress ();\n  ;\n  return 0;\n}",
+			"ac_fn_cxx_try_link",
+			"glew",
+			"ac_fn_cxx_try_link",
+			"ac_cv_lib_GLEW_main",
+			"LIBS",
+			"enable_debug",
+			"prefix",
+			"/usr",
+			"ac_cv_lib_GLEW_main",
+			"GLEW",
+			"ac_cv_header_GL_glew_h",
+			"ac_fn_cxx_check_header_mongrel",
+			"includedir",
+			"/usr/",
+			"ENV_",
+			"usability",
+			"GLEW",
+			"ac_fn_cxx_check_header_mongrel",
+			"ac_includes_default",
+			"shad",
+			"ViewArea",
+			"render",
+			"target",
+			"render",
+			"recalculateprojection",
+			"fov",
+			"recalculateViewArea",
+			"target",
+			"TargetAndRotationAreBound",
+			"settriangle",
+			"smgr->",
+			"mesh",
+			"IDFlag_IsPickable",
+			"target",
+			"windowid",
+			"obj",
+			"draw",
+			"createOpenGLDriver",
+			"createdriver",
+			"CIrrDeviceMacOSX::CIrrDeviceMacOSX",
+			"CIrrDeviceMacOSX::",
+			"_window",
+			"windowid",
+			"app"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"GLEW_LIBS = -L/opt/local/lib -lGLEW\nGLIB_CFLAGS = -I/opt/local/include/glib-2.0 -I/opt/local/lib/glib-2.0/include -I/opt/local/include  \nGLIB_LIBS = -L/opt/local/lib -lglib-2.0 -lintl  \nGLU_LIBS = -L/opt/local/lib -lGLU\nGL_LIBS = -L/opt/local/lib -lGL",
+			"BOOST_FILESYSTEM_LDFLAGS = -L/opt/local/lib -Wl,-R/opt/local/lib\nBOOST_FILESYSTEM_LDPATH = /opt/local/lib\nBOOST_FILESYSTEM_LIBS = -lboost_filesystem-mt",
+			"LDFLAGS =  -Wl",
+			"LD = ld",
+			"CC = gcc-mp-4.7\nCCDEPMODE = depmode=gcc3\nCFLAGS = -g -O2 -DNDEBUG -g -O2 -Wall -Wno-unused-variable -Werror=return-type\nCPP = gcc-mp-4.7 -E\nCPPFLAGS = -I/opt/local/include -DPOSIX -std=c++11\nCXX = g++-mp-4.7\nCXXCPP = g++-mp-4.7 -E\nCXXDEPMODE = depmode=gcc3\nCXXFLAGS = -g -O2 -DNDEBUG  -Wall -Wno-unused-variable -Werror=return-type\nCYGPATH_W = echo",
+			"    ",
+			"->",
+			" "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/henrytran/Programming/Spine/makefile",
+					"settings":
+					{
+						"buffer_size": 819,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								679,
+								679
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/henrytran/Programming/Spine/src/medula.cpp",
+					"settings":
+					{
+						"buffer_size": 2512,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1412,
+								1412
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/henrytran/Programming/Spine/src/module.cpp",
+					"settings":
+					{
+						"buffer_size": 473,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								175,
+								175
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "spine.sublime-project",
+					"settings":
+					{
+						"buffer_size": 217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								198,
+								198
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/henrytran/Programming/Spine/common/module.h",
+					"settings":
+					{
+						"buffer_size": 364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								364,
+								364
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.clang":
+	{
+		"height": 94.0
+	},
+	"output.exec":
+	{
+		"height": 93.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"common/module.h"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 163.0,
+	"status_bar_visible": true
+}
