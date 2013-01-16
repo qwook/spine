@@ -2,18 +2,21 @@
 	"folders":
 	[
 		{
-			"path": "../src"
+			"path": "/Users/henrytran/Programming/Spine/src"
 		},
 		{
-			"path": "../common"
+			"path": "/Users/henrytran/Programming/Spine/common"
+		},
+		{
+			"path": "spine.xcodeproj"
 		}
 	],
-    "settings":
-    {
-        "sublimeclang_options":
-        [
-             "-I../common/",
-             "-I../src/"
-        ]
-    }
+	"settings":
+	{
+		"sublimeclang_options":
+		[
+			"-I../common/",
+			"-I../src/"
+		]
+	}
 }

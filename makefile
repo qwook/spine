@@ -11,8 +11,9 @@ INCLUDES = -I common
 LIBRARIES =
 
 OBJS = \
-	$(OBJ_DIR)/src/medula.o \
+	$(OBJ_DIR)/src/math.o \
 	$(OBJ_DIR)/src/modulemanager.o \
+	$(OBJ_DIR)/src/medula.o \
 
 MODULE_OBJS = \
 	$(OBJ_DIR)/src/module.o \
@@ -31,6 +32,8 @@ all: $(OBJ_DIR) $(OBJS) $(MODULE_OBJ) $(OUT_DIR) $(OUT_FINAL) $(MODULE_FINAL) $(
 clean:
 	-rm -rf $(OBJ_DIR)
 	-rm -f $(OUT_FINAL)
+	-rm -f $(MODULE_FINAL)
+	-rm -f $(OS_FINAL)
 
 $(OUT_DIR):
 	mkdir $(OUT_DIR)

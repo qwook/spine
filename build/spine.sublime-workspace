@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ge",
+				"getFPS()	float"
+			],
+			[
 				"IMo",
 				"IModuleManager	class"
 			],
@@ -103,7 +107,15 @@
 			"file": "/Users/henrytran/Programming/Spine/makefile",
 			"settings":
 			{
-				"buffer_size": 819,
+				"buffer_size": 1137,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/henrytran/Programming/darkradiant/DarkRadiant/radiant/Makefile",
+			"settings":
+			{
+				"buffer_size": 564439,
 				"line_ending": "Unix"
 			}
 		},
@@ -111,31 +123,87 @@
 			"file": "/Users/henrytran/Programming/Spine/src/medula.cpp",
 			"settings":
 			{
-				"buffer_size": 2512,
+				"buffer_size": 2129,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/henrytran/Programming/Spine/src/module.cpp",
+			"file": "/Users/henrytran/Programming/Spine/common/imath.h",
 			"settings":
 			{
-				"buffer_size": 473,
+				"buffer_size": 691,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "spine.sublime-project",
+			"file": "/Users/henrytran/Programming/Spine/src/math.cpp",
 			"settings":
 			{
-				"buffer_size": 217,
+				"buffer_size": 1346,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/henrytran/Programming/Spine/common/module.h",
+			"file": "/Users/henrytran/btfwp/space/client/objects/stars.coffee",
 			"settings":
 			{
-				"buffer_size": 364,
+				"buffer_size": 2680,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/henrytran/PrimitiveEngine/common/emath.h",
+			"settings":
+			{
+				"buffer_size": 4901,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Users/henrytran/Programming/Spine/src/os.cpp",
+			"settings":
+			{
+				"buffer_size": 1398,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/henrytran/Programming/Spine/src/modulemanager.cpp",
+			"settings":
+			{
+				"buffer_size": 1622,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spine.xcodeproj/xcuserdata/henrytran.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist",
+			"settings":
+			{
+				"buffer_size": 134,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/henrytran/Programming/Spine/release/spine_dbg.app/Contents/MacOS/spine.sh",
+			"settings":
+			{
+				"buffer_size": 209,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/henrytran/Programming/Spine/release/spine_dbg.app/Contents/MacOS/spine_dbg.sh",
+			"settings":
+			{
+				"buffer_size": 213,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spine.xcodeproj/project.pbxproj",
+			"settings":
+			{
+				"buffer_size": 17966,
 				"line_ending": "Unix"
 			}
 		}
@@ -172,9 +240,30 @@
 	},
 	"file_history":
 	[
+		"/Users/henrytran/Programming/Spine/build/spine.xcodeproj/xcuserdata/henrytran.xcuserdatad/xcschemes/spine.xcscheme",
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/Makefile",
+		"/Users/henrytran/Programming/Spine/LICENSE.md",
+		"/Users/henrytran/Programming/Spine/src/os.h",
+		"/Users/henrytran/Programming/Spine/src/modulemanager.cpp",
+		"/Users/henrytran/Programming/Spine/src/math.cpp",
+		"/Users/henrytran/btfwp/space/client/math.coffee",
+		"/Users/henrytran/btfwp/space/client/point.coffee",
+		"/Users/henrytran/PrimitiveEngine/common/emath.cpp",
+		"/Users/henrytran/PrimitiveEngine/common/emath.h",
+		"/Users/henrytran/Programming/Spine/src/module.cpp",
+		"/Users/henrytran/PrimitiveEngine/irrlicht-1.8/source/Irrlicht/CD3D9Driver.cpp",
+		"/Users/henrytran/PrimitiveEngine/irrlicht-1.8/source/Irrlicht/COpenGLDriver.cpp",
+		"/Users/henrytran/Programming/Spine/common/imodule.h",
+		"/Users/henrytran/Programming/Spine/common/imodulemanager.h",
+		"/Users/henrytran/Programming/Spine/src/modulemanager.h",
+		"/Users/henrytran/Programming/Spine/common/ios.h",
+		"/Users/henrytran/Programming/Spine/src/module.h",
+		"/Users/henrytran/PrimitiveEngine/irrlicht-1.8/source/Irrlicht/COpenGLDriver.h",
+		"/Users/henrytran/Programming/Spine/common/modulemanager.h",
+		"/Users/henrytran/Programming/Spine/common/module.h",
+		"/Users/henrytran/Programming/Spine/build/spine.sublime-project",
 		"/Users/henrytran/Library/Application Support/Sublime Text 2/Packages/User/SublimeClang.sublime-settings",
 		"/Users/henrytran/Programming/netradiant/NetRadiant/include/modulesystem.h",
-		"/Users/henrytran/Programming/Spine/src/module.cpp",
 		"/Users/henrytran/Programming/faceTracking/makefile",
 		"/Users/henrytran/Programming/netradiant/NetRadiant/plugins/mapxml/plugin.cpp",
 		"/Users/henrytran/Programming/Spine/medula.cpp",
@@ -232,7 +321,6 @@
 		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/picomodel/Makefile",
 		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/scene/Makefile",
 		"/Users/henrytran/Programming/darkradiant/DarkRadiant/libs/xmlutil/Makefile",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/Makefile",
 		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/archivezip/Makefile",
 		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/commandsystem/Makefile",
 		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.conversation/Makefile",
@@ -279,27 +367,7 @@
 		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/commandsystem/Makefile.in",
 		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.conversation/Makefile.in",
 		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.difficulty/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.editing/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.gui/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.objectives/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.stimresponse/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/eclassmgr/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/eclasstree/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/entity/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/entitylist/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/eventmanager/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/filetypes/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/filters/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/fonts/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/grid/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/image/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/mapdoom3/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/md5model/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/model/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/particles/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/scenegraph/Makefile.in",
-		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/script/Makefile.in"
+		"/Users/henrytran/Programming/darkradiant/DarkRadiant/plugins/dm.editing/Makefile.in"
 	],
 	"find":
 	{
@@ -319,6 +387,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"marble",
+			"Marble",
+			"out",
+			"radiant-",
+			"LTCXXCOMPILE",
+			"LIBTOOL",
+			"CXXLD",
+			"(LIBTOOL",
+			"CIrrDeviceMacOSX",
 			"UnloadModuleFn",
 			"style",
 			"print(",
@@ -437,16 +514,7 @@
 			"mesh",
 			"IDFlag_IsPickable",
 			"target",
-			"windowid",
-			"obj",
-			"draw",
-			"createOpenGLDriver",
-			"createdriver",
-			"CIrrDeviceMacOSX::CIrrDeviceMacOSX",
-			"CIrrDeviceMacOSX::",
-			"_window",
-			"windowid",
-			"app"
+			"windowid"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -472,7 +540,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 11,
 			"sheets":
 			[
 				{
@@ -480,20 +548,100 @@
 					"file": "/Users/henrytran/Programming/Spine/makefile",
 					"settings":
 					{
-						"buffer_size": 819,
+						"buffer_size": 1137,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								679,
-								679
+								1086,
+								1071
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 391.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/henrytran/Programming/darkradiant/DarkRadiant/radiant/Makefile",
+					"settings":
+					{
+						"buffer_size": 564439,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								333597,
+								333600
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 21781.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/henrytran/Programming/Spine/src/medula.cpp",
+					"settings":
+					{
+						"buffer_size": 2129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								137
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 128.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/henrytran/Programming/Spine/common/imath.h",
+					"settings":
+					{
+						"buffer_size": 691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								485,
+								485
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -502,19 +650,128 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "/Users/henrytran/Programming/Spine/src/medula.cpp",
+					"buffer": 4,
+					"file": "/Users/henrytran/Programming/Spine/src/math.cpp",
 					"settings":
 					{
-						"buffer_size": 2512,
+						"buffer_size": 1346,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1412,
-								1412
+								1134,
+								1134
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 658.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/henrytran/btfwp/space/client/objects/stars.coffee",
+					"settings":
+					{
+						"buffer_size": 2680,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2365,
+								1975
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1126.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/henrytran/PrimitiveEngine/common/emath.h",
+					"settings":
+					{
+						"buffer_size": 4901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1365,
+								1365
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 767.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/henrytran/Programming/Spine/src/os.cpp",
+					"settings":
+					{
+						"buffer_size": 1398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								964,
+								964
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/henrytran/Programming/Spine/src/modulemanager.cpp",
+					"settings":
+					{
+						"buffer_size": 1622,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -530,24 +787,26 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/Users/henrytran/Programming/Spine/src/module.cpp",
+					"buffer": 9,
+					"file": "spine.xcodeproj/xcuserdata/henrytran.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist",
 					"settings":
 					{
-						"buffer_size": 473,
+						"buffer_size": 134,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								175,
-								175
+								101,
+								101
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -556,24 +815,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "spine.sublime-project",
+					"buffer": 10,
+					"file": "/Users/henrytran/Programming/Spine/release/spine_dbg.app/Contents/MacOS/spine.sh",
 					"settings":
 					{
-						"buffer_size": 217,
+						"buffer_size": 209,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								198,
-								198
+								209,
+								209
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -582,27 +841,54 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/Users/henrytran/Programming/Spine/common/module.h",
+					"buffer": 11,
+					"file": "/Users/henrytran/Programming/Spine/release/spine_dbg.app/Contents/MacOS/spine_dbg.sh",
 					"settings":
 					{
-						"buffer_size": 364,
+						"buffer_size": 213,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								364,
-								364
+								213,
+								213
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.tmLanguage"
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "spine.xcodeproj/project.pbxproj",
+					"settings":
+					{
+						"buffer_size": 17966,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9928,
+								9928
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4266.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

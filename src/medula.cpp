@@ -3,6 +3,7 @@
 #include <map>
 
 #include "modulemanager.h"
+#include "imath.h"
 #include "ios.h"
 
 using namespace std;
@@ -59,32 +60,6 @@ bool wildcard_match( const char *wildcard, const char *match )
     return wild_pos == wildcard_len;
 }
 
-template <class T> class Vector2D
-{
-private:
-    T x, y;
-public:
-    Vector2D( T x = NULL, T y = NULL ) : x(x), y(y) {};
-    Vector2D<T> operator+ (Vector2D<T> rhs);
-    Vector2D<T> operator- (Vector2D<T> rhs);
-    Vector2D<T> operator* (float scalar);
-    Vector2D<T> operator/ (float scalar);
-
-    Vector2D<T> getNormal();
-    float getDistance();
-    float getDotProduct();
-};
-
-typename <class T>;
-Vector2D<T> Vector2D::getNormal()
-{
-
-}
-
-typedef Vector2D<float> Vector2Df;
-
-Vector2Df vec;
-
 class IEntity
 {
 public:
@@ -96,6 +71,9 @@ int main( int argc, const char **argv )
 {
     modulemanager = new CModuleManager;
     IOSModule *os = (IOSModule *)modulemanager->loadModule("os");
+
+    Vector2Df z( 0, 1 );
+    printf( "%f\n", z.getLength() );
 
     float lastFrameTime = os->getTimeInternal();
     const float FPSLimit = 30; // TODO: Make this an option.
