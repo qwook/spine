@@ -59,6 +59,39 @@ bool wildcard_match( const char *wildcard, const char *match )
     return wild_pos == wildcard_len;
 }
 
+template <class T> class Vector2D
+{
+private:
+    T x, y;
+public:
+    Vector2D( T x = NULL, T y = NULL ) : x(x), y(y) {};
+    Vector2D<T> operator+ (Vector2D<T> rhs);
+    Vector2D<T> operator- (Vector2D<T> rhs);
+    Vector2D<T> operator* (float scalar);
+    Vector2D<T> operator/ (float scalar);
+
+    Vector2D<T> getNormal();
+    float getDistance();
+    float getDotProduct();
+};
+
+typename <class T>;
+Vector2D<T> Vector2D::getNormal()
+{
+
+}
+
+typedef Vector2D<float> Vector2Df;
+
+Vector2Df vec;
+
+class IEntity
+{
+public:
+    void setOrigin();
+    void setAngles();
+};
+
 int main( int argc, const char **argv )
 {
     modulemanager = new CModuleManager;
