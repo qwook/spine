@@ -13,8 +13,16 @@
 #include "graphics.h"
 
 #include <iostream>
-#include <OpenGL/gl.h>
+
+#define GLEW_STATIC
+#include <GL/glew.h>
 #include <GL/glfw.h>
+
+float vertices[] = {
+    0.0f,  0.5f, // Vertex 1 (X, Y)
+    0.5f, -0.5f, // Vertex 2 (X, Y)
+    -0.5f, -0.5f  // Vertex 3 (X, Y)
+};
 
 void CGraphicsModule::initDriver()
 {
@@ -33,6 +41,14 @@ void CGraphicsModule::initDriver()
 	const GLubyte* vendor = glGetString(GL_VENDOR);
     
     printf("Version: %s\nRenderer: %s\nVendor: %s\n", version, renderer, vendor);
+    
+    glewExperimental = GL_TRUE;
+    glewInit();
+    
+    GLuint vbo;
+    glGenBuffers( 1, &vbo ); // Generate 1 buffer
+    glBindBuffer( GL_ARRAY_BUFFER, vbo );
+    glBufferData( GL_ARRAY_BUFFER, sizeof( vertices ), vertices, GL_STATIC_DRAW );
 }
 
 void CGraphicsModule::init( IModuleManager* modulemanager ) {
@@ -43,13 +59,16 @@ void CGraphicsModule::release() {
 }
 
 bool CGraphicsModule::update() {
-    if ( glfwGetKey( GLFW_KEY_ESC ) == GLFW_PRESS )
+    if ( glfwGetKey( GLFW_KEY_ESC ) == GLFW_PRESS ) {
         return false;
+    }
     
-    if ( !glfwGetWindowParam( GLFW_OPENED ) )
+    if ( !glfwGetWindowParam( GLFW_OPENED ) ) {
         return false;
+    }
     
     glfwSwapBuffers();
+    glDrawArrays( GL_TRIANGLES, 0, 3 );
     return true;
 }
 

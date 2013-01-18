@@ -17,6 +17,8 @@
 		D554AC0A16A9A7E200F28B9F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BBEBA41695DE8800AB9087 /* OpenGL.framework */; };
 		D554AC0D16A9B1CA00F28B9F /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */; };
 		D554AC0E16A9B1E100F28B9F /* libglfw.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */; };
+		D554AC1216A9BBD800F28B9F /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = D554AC1116A9BBD800F28B9F /* glew.c */; };
+		D554AC1416A9BE0E00F28B9F /* default.vsh in Sources */ = {isa = PBXBuildFile; fileRef = D554AC1316A9BE0E00F28B9F /* default.vsh */; };
 		D5B5678E1695A94900F0E68E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B5678D1695A94900F0E68E /* Cocoa.framework */; };
 		D5BAC40016A79A4300FB3924 /* entitymanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5BAC3E516A77C2300FB3924 /* entitymanager.cpp */; };
 		D5BAC40116A79A4300FB3924 /* entitymanager.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BAC3E616A77C2300FB3924 /* entitymanager.h */; };
@@ -129,6 +131,10 @@
 		D554ABF216A99AAC00F28B9F /* graphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = graphics.h; path = ../../src/graphics.h; sourceTree = "<group>"; };
 		D554ABFD16A99CAA00F28B9F /* graphics.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = graphics.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.dylib; path = "../../glfw-2.7.7/lib/cocoa/libglfw.dylib"; sourceTree = "<group>"; };
+		D554AC0F16A9BAC800F28B9F /* libGLEW.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.dylib; path = ../../glew/lib/libGLEW.dylib; sourceTree = "<group>"; };
+		D554AC1116A9BBD800F28B9F /* glew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glew.c; path = ../../src/glew.c; sourceTree = "<group>"; };
+		D554AC1316A9BE0E00F28B9F /* default.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = default.vsh; path = ../shaders/default.vsh; sourceTree = "<group>"; };
+		D554AC1616A9BE4300F28B9F /* default.psh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = default.psh; path = ../shaders/default.psh; sourceTree = "<group>"; };
 		D5B567891695A94900F0E68E /* spine_dbg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spine_dbg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B5678D1695A94900F0E68E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D5B567901695A94900F0E68E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -217,6 +223,7 @@
 		D554ABEE16A99A7400F28B9F /* graphics */ = {
 			isa = PBXGroup;
 			children = (
+				D554AC1116A9BBD800F28B9F /* glew.c */,
 				D554ABF116A99AAC00F28B9F /* graphics.mm */,
 				D554ABF216A99AAC00F28B9F /* graphics.h */,
 			);
@@ -224,13 +231,24 @@
 			path = os;
 			sourceTree = "<group>";
 		};
+		D554AC1516A9BE1900F28B9F /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				D554AC1316A9BE0E00F28B9F /* default.vsh */,
+				D554AC1616A9BE4300F28B9F /* default.psh */,
+			);
+			name = shaders;
+			sourceTree = "<group>";
+		};
 		D5B5677E1695A94800F0E68E = {
 			isa = PBXGroup;
 			children = (
+				D554AC0F16A9BAC800F28B9F /* libGLEW.dylib */,
 				D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */,
 				D5BBEBBD1695DEB900AB9087 /* IOKit.framework */,
 				D5BBEBA41695DE8800AB9087 /* OpenGL.framework */,
 				D5BAC40916A7CC0900FB3924 /* interfaces */,
+				D554AC1516A9BE1900F28B9F /* shaders */,
 				D5BAC40B16A7EA9700FB3924 /* client */,
 				D554ABEE16A99A7400F28B9F /* graphics */,
 				D51920E616A67E9600014308 /* os */,
@@ -499,6 +517,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D554AC0416A9A5EB00F28B9F /* graphics.mm in Sources */,
+				D554AC1216A9BBD800F28B9F /* glew.c in Sources */,
+				D554AC1416A9BE0E00F28B9F /* default.vsh in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,11 +616,15 @@
 					"$(inherited)",
 				);
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../glfw-2.7.7/include\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../glfw-2.7.7/include\"",
+					"\"$(SRCROOT)/../../glew/include\"",
+				);
 				INSTALL_PATH = "@executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../glfw-2.7.7/lib/cocoa\"",
+					"\"$(SRCROOT)/../../glew/lib\"",
 				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = (
@@ -618,11 +642,15 @@
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = "MAC_OSX=1";
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../glfw-2.7.7/include\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../glfw-2.7.7/include\"",
+					"\"$(SRCROOT)/../../glew/include\"",
+				);
 				INSTALL_PATH = "@executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../glfw-2.7.7/lib/cocoa\"",
+					"\"$(SRCROOT)/../../glew/lib\"",
 				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = (
