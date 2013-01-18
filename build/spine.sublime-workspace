@@ -115,7 +115,7 @@
 			"file": "/Users/henrytran/Programming/Spine/release/spine_dbg.app/Contents/MacOS/spine_dbg.sh",
 			"settings":
 			{
-				"buffer_size": 213,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -307,6 +307,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"copy",
 			"marble",
 			"Marble",
 			"out",
@@ -433,8 +434,7 @@
 			"smgr->",
 			"mesh",
 			"IDFlag_IsPickable",
-			"target",
-			"windowid"
+			"target"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -460,7 +460,6 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
 				{
@@ -484,7 +483,7 @@
 							"syntax": "Packages/Makefile/Makefile.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 60.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -494,15 +493,15 @@
 					"file": "/Users/henrytran/Programming/Spine/release/spine_dbg.app/Contents/MacOS/spine_dbg.sh",
 					"settings":
 					{
-						"buffer_size": 213,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								67,
-								67
+								0,
+								0
 							]
 						],
 						"settings":

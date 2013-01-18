@@ -16,79 +16,17 @@
 
 #include "os.h"
 
-static const int NUM_FPS_SAMPLES = 64;
-float fpsSamples[NUM_FPS_SAMPLES];
-int currentSample = 0;
-
-float COSModule::getCPUClock() {
-    return (float)clock();
+void CGraphicsModule::init( IModuleManager* modulemanager ) {
 }
 
-float COSModule::getTimeInternal() {
-    return getCPUClock()/CLOCKS_PER_SEC;
-}
-
-float COSModule::getTime() {
-    return storedtime;
-}
-
-float COSModule::getDelta() {
-    return delta;
-}
-
-float COSModule::getFPS() {
-    return fps;
-}
-
-float COSModule::getRAMUsage() {
-    // still trying to figure out how to find out CPU usage
-    // or at least some sort of performance measurement.
-    
-    // for windows: GetProcessMemoryInfo()
-    
-    //rusage data;
-    //getrusage(RUSAGE_SELF, &data);
-    
-    //return data.ru_msgrcv;
-    return 0.0f;
-}
-
-void COSModule::update() {
-    float realtime = getTimeInternal();
-    storedtime = realtime - starttime;
-    delta = storedtime - lasttime;
-    lasttime = storedtime;
-
-    fps -= fpsSamples[0] / NUM_FPS_SAMPLES;
-
-    memmove( &fpsSamples[0], &fpsSamples[1], sizeof(fpsSamples) - sizeof(*fpsSamples) );
-    if ( delta == 0 ) {
-        fpsSamples[NUM_FPS_SAMPLES-1] = 0;
-    } else {
-        fpsSamples[NUM_FPS_SAMPLES-1] = 1.0f / (delta * 1000);
-        fps += (1.0f / (delta * 1000)) / NUM_FPS_SAMPLES;
-    }
-}
-
-void COSModule::init( IModuleManager* modulemanager ) {
-    delta = 0;
-    storedtime = 0;
-    lasttime = 0;
-    starttime = getTimeInternal();
-    fps = 0;
-    for(int i=0; i<NUM_FPS_SAMPLES; i++) {
-        fpsSamples[i] = 0;
-    }
-}
-
-void COSModule::release() {
+void CGraphicsModule::release() {
 }
 
 extern "C" IModule * SPINE_DLLEXPORT loadModule() {
-    os = new COSModule();
-    return os;
+    graphics = new CGraphicsModule();
+    return graphics;
 }
 
 extern "C" void SPINE_DLLEXPORT unloadModule() {
-    delete (COSModule *)os;
+    delete (CGraphicsModule *)graphics;
 }

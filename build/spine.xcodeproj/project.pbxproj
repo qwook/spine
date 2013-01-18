@@ -12,6 +12,8 @@
 		D51920C516A675A600014308 /* modulemanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D51920C416A675A600014308 /* modulemanager.cpp */; };
 		D51920F416A67ECF00014308 /* os.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D51920F216A67ECF00014308 /* os.cpp */; };
 		D51920F516A67ECF00014308 /* os.h in Headers */ = {isa = PBXBuildFile; fileRef = D51920F316A67ECF00014308 /* os.h */; };
+		D554ABF516A99CAA00F28B9F /* client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5BAC41016A8A21700FB3924 /* client.cpp */; };
+		D554ABF816A99CAA00F28B9F /* client.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BAC41116A8A21700FB3924 /* client.h */; };
 		D5B5678E1695A94900F0E68E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B5678D1695A94900F0E68E /* Cocoa.framework */; };
 		D5BAC40016A79A4300FB3924 /* entitymanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5BAC3E516A77C2300FB3924 /* entitymanager.cpp */; };
 		D5BAC40116A79A4300FB3924 /* entitymanager.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BAC3E616A77C2300FB3924 /* entitymanager.h */; };
@@ -24,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D554ABFE16A99CE000F28B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5B567801695A94800F0E68E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D554ABF316A99CAA00F28B9F;
+			remoteInfo = graphics;
+		};
 		D5BAC40216A7B02C00FB3924 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D5B567801695A94800F0E68E /* Project object */;
@@ -48,6 +57,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D554ABF916A99CAA00F28B9F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5BAC3F916A77C8A00FB3924 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -102,6 +120,10 @@
 		D51920EA16A67E9600014308 /* osTarget.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = osTarget.xcconfig; sourceTree = "<group>"; };
 		D51920F216A67ECF00014308 /* os.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = os.cpp; path = ../../src/os.cpp; sourceTree = "<group>"; };
 		D51920F316A67ECF00014308 /* os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = os.h; path = ../../src/os.h; sourceTree = "<group>"; };
+		D554ABF016A99A9900F28B9F /* igraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = igraphics.h; path = ../common/igraphics.h; sourceTree = "<group>"; };
+		D554ABF116A99AAC00F28B9F /* graphics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = graphics.cpp; path = ../../src/graphics.cpp; sourceTree = "<group>"; };
+		D554ABF216A99AAC00F28B9F /* graphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = graphics.h; path = ../../src/graphics.h; sourceTree = "<group>"; };
+		D554ABFD16A99CAA00F28B9F /* graphics.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = graphics.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B567891695A94900F0E68E /* spine_dbg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spine_dbg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B5678D1695A94900F0E68E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D5B567901695A94900F0E68E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -125,6 +147,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		D51920E216A67E9600014308 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D554ABF616A99CAA00F28B9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,6 +207,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D554ABEE16A99A7400F28B9F /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				D554ABF116A99AAC00F28B9F /* graphics.cpp */,
+				D554ABF216A99AAC00F28B9F /* graphics.h */,
+			);
+			name = graphics;
+			path = os;
+			sourceTree = "<group>";
+		};
 		D5B5677E1695A94800F0E68E = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +224,7 @@
 				D5BBEBA41695DE8800AB9087 /* OpenGL.framework */,
 				D5BAC40916A7CC0900FB3924 /* interfaces */,
 				D5BAC40B16A7EA9700FB3924 /* client */,
+				D554ABEE16A99A7400F28B9F /* graphics */,
 				D51920E616A67E9600014308 /* os */,
 				D5BAC3FE16A78E7400FB3924 /* entitymanager */,
 				D5B5678C1695A94900F0E68E /* Frameworks */,
@@ -205,6 +245,7 @@
 				D51920E516A67E9600014308 /* os.dylib */,
 				D5BAC3FD16A77C8A00FB3924 /* entitymanager.dylib */,
 				D5BAC41D16A8A22100FB3924 /* client.dylib */,
+				D554ABFD16A99CAA00F28B9F /* graphics.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,6 +284,7 @@
 		D5BAC40916A7CC0900FB3924 /* interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				D554ABF016A99A9900F28B9F /* igraphics.h */,
 				D5BAC40416A7B2A300FB3924 /* imodule.h */,
 				D51920DF16A67B0D00014308 /* imath.h */,
 				D51920E016A67B1400014308 /* ios.h */,
@@ -271,6 +313,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D51920F516A67ECF00014308 /* os.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D554ABF716A99CAA00F28B9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D554ABF816A99CAA00F28B9F /* client.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +361,24 @@
 			productReference = D51920E516A67E9600014308 /* os.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		D554ABF316A99CAA00F28B9F /* graphics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D554ABFA16A99CAA00F28B9F /* Build configuration list for PBXNativeTarget "graphics" */;
+			buildPhases = (
+				D554ABF416A99CAA00F28B9F /* Sources */,
+				D554ABF616A99CAA00F28B9F /* Frameworks */,
+				D554ABF716A99CAA00F28B9F /* Headers */,
+				D554ABF916A99CAA00F28B9F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = graphics;
+			productName = os;
+			productReference = D554ABFD16A99CAA00F28B9F /* graphics.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		D5B567881695A94900F0E68E /* spine */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5B567BB1695A94A00F0E68E /* Build configuration list for PBXNativeTarget "spine" */;
@@ -323,6 +391,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D554ABFF16A99CE000F28B9F /* PBXTargetDependency */,
 				D5BAC41F16A8A24E00FB3924 /* PBXTargetDependency */,
 				D5BAC40316A7B02C00FB3924 /* PBXTargetDependency */,
 				D5EE116316A6832300EEB96B /* PBXTargetDependency */,
@@ -393,6 +462,7 @@
 				D51920E416A67E9600014308 /* os */,
 				D5BAC3F316A77C8A00FB3924 /* entitymanager */,
 				D5BAC41316A8A22100FB3924 /* client */,
+				D554ABF316A99CAA00F28B9F /* graphics */,
 			);
 		};
 /* End PBXProject section */
@@ -413,6 +483,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D51920F416A67ECF00014308 /* os.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D554ABF416A99CAA00F28B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D554ABF516A99CAA00F28B9F /* client.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +524,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D554ABFF16A99CE000F28B9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D554ABF316A99CAA00F28B9F /* graphics */;
+			targetProxy = D554ABFE16A99CE000F28B9F /* PBXContainerItemProxy */;
+		};
 		D5BAC40316A7B02C00FB3924 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D5BAC3F316A77C8A00FB3924 /* entitymanager */;
@@ -492,6 +575,38 @@
 					"-flat_namespace",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+		D554ABFB16A99CAA00F28B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INSTALL_PATH = "@executable_path";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					suppress,
+					"-flat_namespace",
+				);
+				PRODUCT_NAME = graphics;
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		D554ABFC16A99CAA00F28B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INSTALL_PATH = "@executable_path";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					suppress,
+					"-flat_namespace",
+				);
+				PRODUCT_NAME = graphics;
 				SDKROOT = macosx10.7;
 			};
 			name = Release;
@@ -695,6 +810,15 @@
 			buildConfigurations = (
 				D51920F016A67E9600014308 /* Debug */,
 				D51920F116A67E9600014308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D554ABFA16A99CAA00F28B9F /* Build configuration list for PBXNativeTarget "graphics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D554ABFB16A99CAA00F28B9F /* Debug */,
+				D554ABFC16A99CAA00F28B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
