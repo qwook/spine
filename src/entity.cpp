@@ -10,27 +10,51 @@
  
  */
 
-#ifndef IMODULE_H
-#define IMODULE_H
+#include "ientitymanager.h"
 
-#if defined( WIN32 )
-#ifdef MINGW32
-#define SPINE_DLLEXPORT __declspec( dllexport )
-#define SPINE_DLLIMPORT __declspec( dllimport )
-#else
-#define SPINE_DLLEXPORT __stdcall
-#define SPINE_DLLIMPORT __stdcall
-#endif
-#else
-#define SPINE_DLLEXPORT
-#define SPINE_DLLIMPORT
-#endif
+void IEntity::spawn() {
+    entitymanager->spawnEntity(this);
+}
 
-class IModuleManager;
-class IModule {
-public:
-    virtual void init( IModuleManager* modulemanager ) = 0;
-    virtual void release() = 0;
-};
+IEntity::IEntity() : zIndex(0), angle(0) {
+    entitymanager->index++;
+    entIndex = entitymanager->index;
+}
 
-#endif
+IEntity::~IEntity() {
+}
+
+void IEntity::think() {
+    
+}
+
+void IEntity::render() {
+    
+}
+
+void IEntity::setOrigin(Vector2Df pos) {
+    this->origin = pos;
+}
+
+void IEntity::setAngle(float angle) {
+    this->angle = angle;
+}
+
+void IEntity::remove() {
+    entitymanager->removeEntity(this);
+    delete this;
+}
+
+const char *IEntity::getClassName() {
+    return &internalClassName;
+}
+
+unsigned long IEntity::getEntIndex()
+{
+    return entIndex;
+}
+
+bool IEntity::operator== ( const IEntity& ent )
+{
+    return entIndex == ent.entIndex;
+}

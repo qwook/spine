@@ -10,27 +10,18 @@
  
  */
 
-#ifndef IMODULE_H
-#define IMODULE_H
+#ifndef ICLIENTMODULE_H
+#define ICLIENTMODULE_H
 
-#if defined( WIN32 )
-#ifdef MINGW32
-#define SPINE_DLLEXPORT __declspec( dllexport )
-#define SPINE_DLLIMPORT __declspec( dllimport )
-#else
-#define SPINE_DLLEXPORT __stdcall
-#define SPINE_DLLIMPORT __stdcall
-#endif
-#else
-#define SPINE_DLLEXPORT
-#define SPINE_DLLIMPORT
-#endif
+#include "imodule.h"
 
-class IModuleManager;
-class IModule {
+class IClientModule : public IModule {
 public:
     virtual void init( IModuleManager* modulemanager ) = 0;
     virtual void release() = 0;
+    virtual void update() = 0;
 };
+
+extern IClientModule *client;
 
 #endif

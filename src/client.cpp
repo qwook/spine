@@ -10,27 +10,42 @@
  
  */
 
-#ifndef IMODULE_H
-#define IMODULE_H
+#include "imodulemanager.h"
+#include "ientitymanager.h"
+#include "client.h"
 
-#if defined( WIN32 )
-#ifdef MINGW32
-#define SPINE_DLLEXPORT __declspec( dllexport )
-#define SPINE_DLLIMPORT __declspec( dllimport )
-#else
-#define SPINE_DLLEXPORT __stdcall
-#define SPINE_DLLIMPORT __stdcall
-#endif
-#else
-#define SPINE_DLLEXPORT
-#define SPINE_DLLIMPORT
-#endif
-
-class IModuleManager;
-class IModule {
+class CBaseEntity : public IEntity
+{
 public:
-    virtual void init( IModuleManager* modulemanager ) = 0;
-    virtual void release() = 0;
+    virtual void think();
+    virtual void setAngle( float angle );
 };
 
-#endif
+REGISTER_CLASS( base_entity, CBaseEntity );
+
+void CBaseEntity::setAngle(float angle) {
+}
+
+void CBaseEntity::think()
+{
+}
+
+void CClientModule::update() {
+}
+
+void CClientModule::init( IModuleManager* modulemanager ) {
+    IEntity* ent = entitymanager->createEntity("base_entity");
+    ent->spawn();
+}
+
+void CClientModule::release() {
+}
+
+extern "C" IModule * SPINE_DLLEXPORT loadModule() {
+    client = new CClientModule();
+    return client;
+}
+
+extern "C" void SPINE_DLLEXPORT unloadModule() {
+    delete (CClientModule *)client;
+}

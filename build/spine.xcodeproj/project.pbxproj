@@ -8,17 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		D51920C216A6750B00014308 /* math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D51920BF16A6750B00014308 /* math.cpp */; };
-		D51920C316A6750B00014308 /* medula.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D51920C016A6750B00014308 /* medula.cpp */; };
+		D51920C316A6750B00014308 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D51920C016A6750B00014308 /* main.cpp */; };
 		D51920C516A675A600014308 /* modulemanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D51920C416A675A600014308 /* modulemanager.cpp */; };
 		D51920F416A67ECF00014308 /* os.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D51920F216A67ECF00014308 /* os.cpp */; };
 		D51920F516A67ECF00014308 /* os.h in Headers */ = {isa = PBXBuildFile; fileRef = D51920F316A67ECF00014308 /* os.h */; };
 		D5B5678E1695A94900F0E68E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B5678D1695A94900F0E68E /* Cocoa.framework */; };
+		D5BAC40016A79A4300FB3924 /* entitymanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5BAC3E516A77C2300FB3924 /* entitymanager.cpp */; };
+		D5BAC40116A79A4300FB3924 /* entitymanager.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BAC3E616A77C2300FB3924 /* entitymanager.h */; };
+		D5BAC40816A7C97700FB3924 /* entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5BAC40716A7C97700FB3924 /* entity.cpp */; };
+		D5BAC42016A8A25500FB3924 /* client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5BAC41016A8A21700FB3924 /* client.cpp */; };
+		D5BAC42116A8A25500FB3924 /* client.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BAC41116A8A21700FB3924 /* client.h */; };
 		D5BBEBA51695DE8800AB9087 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BBEBA41695DE8800AB9087 /* OpenGL.framework */; };
 		D5BBEBBE1695DEB900AB9087 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BBEBBD1695DEB900AB9087 /* IOKit.framework */; };
 		D5EE116A16A689AB00EEB96B /* os.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D51920E516A67E9600014308 /* os.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D5BAC40216A7B02C00FB3924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5B567801695A94800F0E68E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5BAC3F316A77C8A00FB3924;
+			remoteInfo = entitymanager;
+		};
+		D5BAC41E16A8A24E00FB3924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5B567801695A94800F0E68E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5BAC41316A8A22100FB3924;
+			remoteInfo = client;
+		};
 		D5EE116216A6832300EEB96B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D5B567801695A94800F0E68E /* Project object */;
@@ -29,6 +48,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D5BAC3F916A77C8A00FB3924 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BAC41916A8A22100FB3924 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5EE116716A6893800EEB96B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -52,7 +89,7 @@
 
 /* Begin PBXFileReference section */
 		D51920BF16A6750B00014308 /* math.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = math.cpp; path = ../src/math.cpp; sourceTree = "<group>"; };
-		D51920C016A6750B00014308 /* medula.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = medula.cpp; path = ../src/medula.cpp; sourceTree = "<group>"; };
+		D51920C016A6750B00014308 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../src/main.cpp; sourceTree = "<group>"; };
 		D51920C416A675A600014308 /* modulemanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = modulemanager.cpp; path = ../src/modulemanager.cpp; sourceTree = "<group>"; };
 		D51920CB16A6767200014308 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		D51920DD16A67AE300014308 /* module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = module.h; path = ../src/module.h; sourceTree = "<group>"; };
@@ -71,6 +108,17 @@
 		D5B567911695A94900F0E68E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D5B567921695A94900F0E68E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D5B567AB1695A94A00F0E68E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D5BAC3E516A77C2300FB3924 /* entitymanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = entitymanager.cpp; path = ../../src/entitymanager.cpp; sourceTree = "<group>"; };
+		D5BAC3E616A77C2300FB3924 /* entitymanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = entitymanager.h; path = ../../src/entitymanager.h; sourceTree = "<group>"; };
+		D5BAC3FD16A77C8A00FB3924 /* entitymanager.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = entitymanager.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BAC3FF16A79A3100FB3924 /* ientitymanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ientitymanager.h; path = ../common/ientitymanager.h; sourceTree = "<group>"; };
+		D5BAC40416A7B2A300FB3924 /* imodule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imodule.h; path = ../common/imodule.h; sourceTree = "<group>"; };
+		D5BAC40716A7C97700FB3924 /* entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = entity.cpp; path = ../src/entity.cpp; sourceTree = "<group>"; };
+		D5BAC40A16A7EA5400FB3924 /* iclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iclient.h; path = ../common/iclient.h; sourceTree = "<group>"; };
+		D5BAC41016A8A21700FB3924 /* client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = client.cpp; path = ../../src/client.cpp; sourceTree = "<group>"; };
+		D5BAC41116A8A21700FB3924 /* client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = client.h; path = ../../src/client.h; sourceTree = "<group>"; };
+		D5BAC41D16A8A22100FB3924 /* client.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = client.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BAC42716A94B1B00FB3924 /* imodulemanager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imodulemanager.h; path = ../common/imodulemanager.h; sourceTree = "<group>"; };
 		D5BBEBA41695DE8800AB9087 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		D5BBEBBD1695DEB900AB9087 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -90,6 +138,20 @@
 				D5BBEBBE1695DEB900AB9087 /* IOKit.framework in Frameworks */,
 				D5BBEBA51695DE8800AB9087 /* OpenGL.framework in Frameworks */,
 				D5B5678E1695A94900F0E68E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BAC3F616A77C8A00FB3924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BAC41616A8A22100FB3924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,16 +183,18 @@
 			children = (
 				D5BBEBBD1695DEB900AB9087 /* IOKit.framework */,
 				D5BBEBA41695DE8800AB9087 /* OpenGL.framework */,
+				D5BAC40916A7CC0900FB3924 /* interfaces */,
+				D5BAC40B16A7EA9700FB3924 /* client */,
 				D51920E616A67E9600014308 /* os */,
+				D5BAC3FE16A78E7400FB3924 /* entitymanager */,
 				D5B5678C1695A94900F0E68E /* Frameworks */,
 				D5B5678A1695A94900F0E68E /* Products */,
-				D51920BF16A6750B00014308 /* math.cpp */,
-				D51920C016A6750B00014308 /* medula.cpp */,
+				D51920C016A6750B00014308 /* main.cpp */,
 				D51920C416A675A600014308 /* modulemanager.cpp */,
+				D51920BF16A6750B00014308 /* math.cpp */,
+				D5BAC40716A7C97700FB3924 /* entity.cpp */,
 				D51920DD16A67AE300014308 /* module.h */,
 				D51920DE16A67AE300014308 /* modulemanager.h */,
-				D51920DF16A67B0D00014308 /* imath.h */,
-				D51920E016A67B1400014308 /* ios.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +203,8 @@
 			children = (
 				D5B567891695A94900F0E68E /* spine_dbg.app */,
 				D51920E516A67E9600014308 /* os.dylib */,
+				D5BAC3FD16A77C8A00FB3924 /* entitymanager.dylib */,
+				D5BAC41D16A8A22100FB3924 /* client.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,6 +230,39 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
+		D5BAC3FE16A78E7400FB3924 /* entitymanager */ = {
+			isa = PBXGroup;
+			children = (
+				D5BAC3E516A77C2300FB3924 /* entitymanager.cpp */,
+				D5BAC3E616A77C2300FB3924 /* entitymanager.h */,
+			);
+			name = entitymanager;
+			path = os;
+			sourceTree = "<group>";
+		};
+		D5BAC40916A7CC0900FB3924 /* interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				D5BAC40416A7B2A300FB3924 /* imodule.h */,
+				D51920DF16A67B0D00014308 /* imath.h */,
+				D51920E016A67B1400014308 /* ios.h */,
+				D5BAC3FF16A79A3100FB3924 /* ientitymanager.h */,
+				D5BAC42716A94B1B00FB3924 /* imodulemanager.h */,
+				D5BAC40A16A7EA5400FB3924 /* iclient.h */,
+			);
+			name = interfaces;
+			sourceTree = "<group>";
+		};
+		D5BAC40B16A7EA9700FB3924 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				D5BAC41016A8A21700FB3924 /* client.cpp */,
+				D5BAC41116A8A21700FB3924 /* client.h */,
+			);
+			name = client;
+			path = os;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -172,6 +271,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				D51920F516A67ECF00014308 /* os.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BAC3F716A77C8A00FB3924 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BAC40116A79A4300FB3924 /* entitymanager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BAC41716A8A22100FB3924 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BAC42116A8A25500FB3924 /* client.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,12 +323,50 @@
 			buildRules = (
 			);
 			dependencies = (
+				D5BAC41F16A8A24E00FB3924 /* PBXTargetDependency */,
+				D5BAC40316A7B02C00FB3924 /* PBXTargetDependency */,
 				D5EE116316A6832300EEB96B /* PBXTargetDependency */,
 			);
 			name = spine;
 			productName = spine;
 			productReference = D5B567891695A94900F0E68E /* spine_dbg.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D5BAC3F316A77C8A00FB3924 /* entitymanager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5BAC3FA16A77C8A00FB3924 /* Build configuration list for PBXNativeTarget "entitymanager" */;
+			buildPhases = (
+				D5BAC3F416A77C8A00FB3924 /* Sources */,
+				D5BAC3F616A77C8A00FB3924 /* Frameworks */,
+				D5BAC3F716A77C8A00FB3924 /* Headers */,
+				D5BAC3F916A77C8A00FB3924 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = entitymanager;
+			productName = os;
+			productReference = D5BAC3FD16A77C8A00FB3924 /* entitymanager.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		D5BAC41316A8A22100FB3924 /* client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5BAC41A16A8A22100FB3924 /* Build configuration list for PBXNativeTarget "client" */;
+			buildPhases = (
+				D5BAC41416A8A22100FB3924 /* Sources */,
+				D5BAC41616A8A22100FB3924 /* Frameworks */,
+				D5BAC41716A8A22100FB3924 /* Headers */,
+				D5BAC41916A8A22100FB3924 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = client;
+			productName = os;
+			productReference = D5BAC41D16A8A22100FB3924 /* client.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
@@ -238,6 +391,8 @@
 			targets = (
 				D5B567881695A94900F0E68E /* spine */,
 				D51920E416A67E9600014308 /* os */,
+				D5BAC3F316A77C8A00FB3924 /* entitymanager */,
+				D5BAC41316A8A22100FB3924 /* client */,
 			);
 		};
 /* End PBXProject section */
@@ -266,14 +421,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				D51920C216A6750B00014308 /* math.cpp in Sources */,
-				D51920C316A6750B00014308 /* medula.cpp in Sources */,
+				D51920C316A6750B00014308 /* main.cpp in Sources */,
 				D51920C516A675A600014308 /* modulemanager.cpp in Sources */,
+				D5BAC40816A7C97700FB3924 /* entity.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BAC3F416A77C8A00FB3924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BAC40016A79A4300FB3924 /* entitymanager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BAC41416A8A22100FB3924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BAC42016A8A25500FB3924 /* client.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D5BAC40316A7B02C00FB3924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5BAC3F316A77C8A00FB3924 /* entitymanager */;
+			targetProxy = D5BAC40216A7B02C00FB3924 /* PBXContainerItemProxy */;
+		};
+		D5BAC41F16A8A24E00FB3924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5BAC41316A8A22100FB3924 /* client */;
+			targetProxy = D5BAC41E16A8A24E00FB3924 /* PBXContainerItemProxy */;
+		};
 		D5EE116316A6832300EEB96B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D51920E416A67E9600014308 /* os */;
@@ -395,10 +577,7 @@
 				);
 				INFOPLIST_FILE = "Spine-Info.plist";
 				INSTALL_PATH = /;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../irrlicht-1.8/source/Irrlicht/MacOSX/build/Debug\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fasm-blocks";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
@@ -433,10 +612,7 @@
 				);
 				INFOPLIST_FILE = "Spine-Info.plist";
 				INSTALL_PATH = /;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../irrlicht-1.8/source/Irrlicht/MacOSX/build/Debug\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "-fasm-blocks";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +620,70 @@
 				STRIP_INSTALLED_PRODUCT = YES;
 				USER_HEADER_SEARCH_PATHS = "../irrlicht-1.8/include";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D5BAC3FB16A77C8A00FB3924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INSTALL_PATH = "@executable_path";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					suppress,
+					"-flat_namespace",
+				);
+				PRODUCT_NAME = entitymanager;
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		D5BAC3FC16A77C8A00FB3924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INSTALL_PATH = "@executable_path";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					suppress,
+					"-flat_namespace",
+				);
+				PRODUCT_NAME = entitymanager;
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+		D5BAC41B16A8A22100FB3924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INSTALL_PATH = "@executable_path";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					suppress,
+					"-flat_namespace",
+				);
+				PRODUCT_NAME = client;
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		D5BAC41C16A8A22100FB3924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INSTALL_PATH = "@executable_path";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					suppress,
+					"-flat_namespace",
+				);
+				PRODUCT_NAME = client;
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};
@@ -473,6 +713,24 @@
 			buildConfigurations = (
 				D5B567BC1695A94A00F0E68E /* Debug */,
 				D5B567BD1695A94A00F0E68E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5BAC3FA16A77C8A00FB3924 /* Build configuration list for PBXNativeTarget "entitymanager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5BAC3FB16A77C8A00FB3924 /* Debug */,
+				D5BAC3FC16A77C8A00FB3924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5BAC41A16A8A22100FB3924 /* Build configuration list for PBXNativeTarget "client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5BAC41B16A8A22100FB3924 /* Debug */,
+				D5BAC41C16A8A22100FB3924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
