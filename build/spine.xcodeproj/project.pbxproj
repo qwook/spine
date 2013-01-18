@@ -12,8 +12,11 @@
 		D51920C516A675A600014308 /* modulemanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D51920C416A675A600014308 /* modulemanager.cpp */; };
 		D51920F416A67ECF00014308 /* os.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D51920F216A67ECF00014308 /* os.cpp */; };
 		D51920F516A67ECF00014308 /* os.h in Headers */ = {isa = PBXBuildFile; fileRef = D51920F316A67ECF00014308 /* os.h */; };
-		D554ABF516A99CAA00F28B9F /* client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5BAC41016A8A21700FB3924 /* client.cpp */; };
-		D554ABF816A99CAA00F28B9F /* client.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BAC41116A8A21700FB3924 /* client.h */; };
+		D554AC0416A9A5EB00F28B9F /* graphics.mm in Sources */ = {isa = PBXBuildFile; fileRef = D554ABF116A99AAC00F28B9F /* graphics.mm */; };
+		D554AC0716A9A5FC00F28B9F /* graphics.h in Headers */ = {isa = PBXBuildFile; fileRef = D554ABF216A99AAC00F28B9F /* graphics.h */; };
+		D554AC0A16A9A7E200F28B9F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BBEBA41695DE8800AB9087 /* OpenGL.framework */; };
+		D554AC0D16A9B1CA00F28B9F /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */; };
+		D554AC0E16A9B1E100F28B9F /* libglfw.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */; };
 		D5B5678E1695A94900F0E68E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B5678D1695A94900F0E68E /* Cocoa.framework */; };
 		D5BAC40016A79A4300FB3924 /* entitymanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5BAC3E516A77C2300FB3924 /* entitymanager.cpp */; };
 		D5BAC40116A79A4300FB3924 /* entitymanager.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BAC3E616A77C2300FB3924 /* entitymanager.h */; };
@@ -61,8 +64,9 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = "";
-			dstSubfolderSpec = 6;
+			dstSubfolderSpec = 10;
 			files = (
+				D554AC0E16A9B1E100F28B9F /* libglfw.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,9 +125,10 @@
 		D51920F216A67ECF00014308 /* os.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = os.cpp; path = ../../src/os.cpp; sourceTree = "<group>"; };
 		D51920F316A67ECF00014308 /* os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = os.h; path = ../../src/os.h; sourceTree = "<group>"; };
 		D554ABF016A99A9900F28B9F /* igraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = igraphics.h; path = ../common/igraphics.h; sourceTree = "<group>"; };
-		D554ABF116A99AAC00F28B9F /* graphics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = graphics.cpp; path = ../../src/graphics.cpp; sourceTree = "<group>"; };
+		D554ABF116A99AAC00F28B9F /* graphics.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = graphics.mm; path = ../../src/graphics.mm; sourceTree = "<group>"; };
 		D554ABF216A99AAC00F28B9F /* graphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = graphics.h; path = ../../src/graphics.h; sourceTree = "<group>"; };
 		D554ABFD16A99CAA00F28B9F /* graphics.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = graphics.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.dylib; path = "../../glfw-2.7.7/lib/cocoa/libglfw.dylib"; sourceTree = "<group>"; };
 		D5B567891695A94900F0E68E /* spine_dbg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spine_dbg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B5678D1695A94900F0E68E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D5B567901695A94900F0E68E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -157,6 +162,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D554AC0A16A9A7E200F28B9F /* OpenGL.framework in Frameworks */,
+				D554AC0D16A9B1CA00F28B9F /* libglfw.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +217,7 @@
 		D554ABEE16A99A7400F28B9F /* graphics */ = {
 			isa = PBXGroup;
 			children = (
-				D554ABF116A99AAC00F28B9F /* graphics.cpp */,
+				D554ABF116A99AAC00F28B9F /* graphics.mm */,
 				D554ABF216A99AAC00F28B9F /* graphics.h */,
 			);
 			name = graphics;
@@ -220,6 +227,7 @@
 		D5B5677E1695A94800F0E68E = {
 			isa = PBXGroup;
 			children = (
+				D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */,
 				D5BBEBBD1695DEB900AB9087 /* IOKit.framework */,
 				D5BBEBA41695DE8800AB9087 /* OpenGL.framework */,
 				D5BAC40916A7CC0900FB3924 /* interfaces */,
@@ -320,7 +328,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D554ABF816A99CAA00F28B9F /* client.h in Headers */,
+				D554AC0716A9A5FC00F28B9F /* graphics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +498,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D554ABF516A99CAA00F28B9F /* client.cpp in Sources */,
+				D554AC0416A9A5EB00F28B9F /* graphics.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,8 +590,18 @@
 		D554ABFB16A99CAA00F28B9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"MAC_OSX=1",
+					"$(inherited)",
+				);
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../glfw-2.7.7/include\"";
 				INSTALL_PATH = "@executable_path";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../glfw-2.7.7/lib/cocoa\"",
+				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = (
 					"-undefined",
@@ -598,8 +616,14 @@
 		D554ABFC16A99CAA00F28B9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = "MAC_OSX=1";
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../glfw-2.7.7/include\"";
 				INSTALL_PATH = "@executable_path";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../glfw-2.7.7/lib/cocoa\"",
+				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = (
 					"-undefined",

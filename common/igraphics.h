@@ -10,8 +10,8 @@
  
  */
 
-#ifndef IOS_H
-#define IOS_H
+#ifndef IGRAPHICS_H
+#define IGRAPHICS_H
 
 #include "imodule.h"
 
@@ -19,6 +19,8 @@ class IGraphicsModule : public IModule {
 public:
     virtual void init( IModuleManager* modulemanager ) = 0;
     virtual void release() = 0;
+    virtual void initDriver() = 0;
+    virtual bool update() = 0;
 };
 
 extern IGraphicsModule *graphics;

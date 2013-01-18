@@ -10,10 +10,15 @@
  
  */
 
-#ifndef COS_H
-#define COS_H
+#ifndef CGRAPHICS_H
+#define CGRAPHICS_H
 
-#include "ios.h"
+#include "igraphics.h"
+
+#ifdef MAC_OSX
+class NSWindow;
+class NSView;
+#endif
 
 class CGraphicsModule : public IGraphicsModule {
 private:
@@ -21,6 +26,12 @@ public:
 
     virtual void init( IModuleManager* modulemanager );
     virtual void release();
+    virtual void initDriver();
+    virtual bool update();
+    
+#ifdef MAC_OSX
+    NSWindow* osx_window;
+#endif
 };
 
 #endif

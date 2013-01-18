@@ -26,6 +26,7 @@
 #include "ios.h"
 #include "ientitymanager.h"
 #include "iclient.h"
+#include "igraphics.h"
 
 using namespace std;
 
@@ -33,12 +34,16 @@ IModuleManager *modulemanager;
 IOSModule *os;
 IEntityManagerModule *entitymanager;
 IClientModule *client;
+IGraphicsModule *graphics;
 
 #include <vector>
 
 int main( int argc, const char **argv ) {
     modulemanager = new CModuleManager;
     
+    graphics =
+        (IGraphicsModule *)modulemanager->
+        loadModule("graphics");
     os =
         (IOSModule *)modulemanager->
         loadModule("os");
@@ -49,9 +54,12 @@ int main( int argc, const char **argv ) {
         (IClientModule *)modulemanager->
         loadModule("client");
     
+    graphics->initDriver();
+    
     float lastFrameTime = os->getTimeInternal();
     const float FPSLimit = 30; // TODO: Make this an option.
-    while (true) {
+    while (graphics->update()) {
+        
         // If we have an FPS limit, then don't render on certain frames.
         float currentTime = os->getTimeInternal();
         if ( (currentTime - lastFrameTime) < ( 0.001 / FPSLimit ) ) {
