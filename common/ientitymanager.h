@@ -14,6 +14,7 @@
 #define IENTITYMANAGER_H
 
 #include "imodule.h"
+#include "iutil.h"
 #include "imath.h"
 
 #include <iostream>
@@ -49,7 +50,7 @@ typedef IEntity* EntityFactoryFn();
 
 class IEntityManagerModule : public IModule {
 public:
-    typedef map<const char *, EntityFactoryFn *> FactoryMap;
+    typedef map<const char *, EntityFactoryFn *, cmp_str> FactoryMap;
     typedef vector<IEntity *> EntityMap;
     unsigned int index;
 public:

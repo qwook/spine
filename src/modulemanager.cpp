@@ -59,8 +59,12 @@ IModule *CModuleManager::loadModule( const char *name ) {
 }
 
 void CModuleManager::unloadAllModules() {
-    for( ModuleMap::iterator i = modules.begin(); i != modules.end(); ++i ) {
-        unloadModule(i->first);
+    ModuleMap::iterator i = modules.begin();
+    while( i != modules.end() )
+    {
+        printf("UNLOAD: %s\n",i->first);
+        modules.erase(i);
+        i = modules.begin();
     }
 }
 

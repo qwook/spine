@@ -27,6 +27,12 @@
 #include "ientitymanager.h"
 #include "iclient.h"
 #include "igraphics.h"
+#include "iutil.h"
+#include "ifilesystem.h"
+
+#ifdef __APPLE__
+#include "CoreFoundation/CoreFoundation.h"
+#endif
 
 using namespace std;
 
@@ -35,12 +41,34 @@ IOSModule *os;
 IEntityManagerModule *entitymanager;
 IClientModule *client;
 IGraphicsModule *graphics;
+IUtilModule *util;
+IFileSystemModule *filesystem;
 
 #include <vector>
 
+// let there be light
 int main( int argc, const char **argv ) {
     modulemanager = new CModuleManager;
     
+#ifdef __APPLE__2
+    CFBundleRef mainBundle = CFBundleGetMainBundle();
+    CFURLRef resourcesURL = CFBundleCopyResourcesDirectoryURL(mainBundle);
+    char path[PATH_MAX];
+    if (!CFURLGetFileSystemRepresentation(resourcesURL, TRUE, (UInt8 *)path, PATH_MAX))
+    {
+        // error!
+    }
+    CFRelease(resourcesURL);
+    
+    chdir(path);
+#endif
+    
+    util =
+        (IUtilModule *)modulemanager->
+        loadModule("util");
+    filesystem =
+        (IFileSystemModule *)modulemanager->
+        loadModule("filesystem");
     graphics =
         (IGraphicsModule *)modulemanager->
         loadModule("graphics");
@@ -57,8 +85,14 @@ int main( int argc, const char **argv ) {
     graphics->initDriver();
     
     float lastFrameTime = os->getTimeInternal();
-    const float FPSLimit = 30; // TODO: Make this an option.
-    while (graphics->update()) {
+    const float FPSLimit = 90; // TODO: Make this an option.
+    while (graphics->isWindowOpen()) {
+        
+        os->update();
+        entitymanager->update();
+        client->update();
+        
+        //printf("%f\n", os->getFPS());
         
         // If we have an FPS limit, then don't render on certain frames.
         float currentTime = os->getTimeInternal();
@@ -66,10 +100,9 @@ int main( int argc, const char **argv ) {
             continue;
         }
         lastFrameTime = currentTime;
-
-        os->update();
-        entitymanager->update();
-        client->update();
+        
+        graphics->update();
+        
     }
 
     delete (CModuleManager *)modulemanager;

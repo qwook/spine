@@ -10,36 +10,22 @@
  
  */
 
-#ifndef CGRAPHICS_H
-#define CGRAPHICS_H
+#ifndef CUTIL_H
+#define CUTIL_H
 
-#include "igraphics.h"
+#include "iutil.h"
 
-class CGraphicsModule : public IGraphicsModule {
-private:
+class CUtilModule : public IUtilModule {
 public:
-
     virtual void init( IModuleManager* modulemanager );
     virtual void release();
-    virtual void initDriver();
-    virtual void update();
-    virtual bool isWindowOpen();
     
-    virtual Material loadMaterial(const char *matName);
-    virtual Material useMaterial(const char *matName);
-    virtual Material useMaterial(unsigned int mat);
-    
-    virtual unsigned int useProgram(const char *programName);
-    virtual unsigned int useProgram(unsigned int program);
-    virtual void setProgramVar1f(unsigned int program, const char *var, float i);
-    virtual void setProgramVar1i(unsigned int program, const char *var, int i);
-
-    virtual void clear();
-    
-    virtual void setColor(unsigned char r, unsigned char g, unsigned char b, unsigned char a = 255);
-    
-    virtual void drawQuad(float x, float y, float width, float height);
-    virtual void drawQuadUV(float x, float y, float width, float height, float u1, float u2, float v1, float v2);
+    virtual void getFileExtension( char *c, const char *filename );
+    virtual void getFileName( char *c, const char *filename ); // name without extension.
+    virtual void getFileNameNoExtension( char *c, const char *filename ); // name without extension.
+    virtual bool wildcardMatch( const char *wildcard, const char *match );
+    virtual KeyValue *parseKeyValue( char *data );
+    virtual KeyValue *parseKeyValue( Buffer *buffer );
 };
 
 #endif

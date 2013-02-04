@@ -13,6 +13,7 @@
 #include <iostream>
 #include <sys/time.h>
 #include <sys/resource.h>
+#include <GL/glfw.h>
 
 #include "os.h"
 
@@ -21,11 +22,12 @@ float fpsSamples[NUM_FPS_SAMPLES];
 int currentSample = 0;
 
 float COSModule::getCPUClock() {
-    return (float)clock();
+    return (float)glfwGetTime();
+    //return (float)clock()/CLOCKS_PER_SEC;
 }
 
 float COSModule::getTimeInternal() {
-    return getCPUClock()/CLOCKS_PER_SEC;
+    return getCPUClock();
 }
 
 float COSModule::getTime() {
@@ -61,7 +63,7 @@ void COSModule::update() {
 
     fps -= fpsSamples[0] / NUM_FPS_SAMPLES;
 
-    memmove( &fpsSamples[0], &fpsSamples[1], sizeof(fpsSamples) - sizeof(*fpsSamples) );
+    memmove( &fpsSamples[0], &fpsSamples[1], sizeof(fpsSamples) - sizeof(float) );
     if ( delta == 0 ) {
         fpsSamples[NUM_FPS_SAMPLES-1] = 0;
     } else {

@@ -10,42 +10,46 @@
  
  */
 
-#ifndef IGRAPHICS_H
-#define IGRAPHICS_H
+#ifndef IUTIL_H
+#define IUTIL_H
 
 #include "imodule.h"
+#include "keyval.h"
 
-typedef struct {
-    unsigned int mat;
-    unsigned int width;
-    unsigned int height;
-} Material;
+class Buffer {
+public:
+    char *data;
+    Buffer() { data = NULL; };
+    ~Buffer() {
+        if (data != NULL) {
+            delete data;
+        }
+    };
+    
+    void allocate( long size ) {
+        if (data != NULL) {
+            delete data;
+        }
+        data = new char[size];
+    };
+    operator const char*() { return data; };
+    operator char*() { return data; };
+    
+};
 
-class IGraphicsModule : public IModule {
+class IUtilModule : public IModule {
 public:
     virtual void init( IModuleManager* modulemanager ) = 0;
     virtual void release() = 0;
-    virtual void initDriver() = 0;
-    virtual void update() = 0;
-    virtual bool isWindowOpen() = 0;
     
-    virtual Material loadMaterial(const char *matName) = 0;
-    virtual Material useMaterial(const char *matName) = 0;
-    virtual Material useMaterial(unsigned int mat) = 0;
-    
-    virtual unsigned int useProgram(const char *programName) = 0;
-    virtual unsigned int useProgram(unsigned int program) = 0;
-    virtual void setProgramVar1f(unsigned int program, const char *var, float i) = 0;
-    virtual void setProgramVar1i(unsigned int program, const char *var, int i) = 0;
-    
-    virtual void clear() = 0;
-    
-    virtual void setColor(unsigned char r, unsigned char g, unsigned char b, unsigned char a = 255) = 0;
-    
-    virtual void drawQuad(float x, float y, float width, float height) = 0;
-    virtual void drawQuadUV(float x, float y, float width, float height, float u1, float u2, float v1, float v2) = 0;
+    virtual void getFileExtension( char *c, const char *filename ) = 0;
+    virtual void getFileName( char *c, const char *filename ) = 0;
+    virtual void getFileNameNoExtension( char *c, const char *filename ) = 0; // name without extension.
+    virtual bool wildcardMatch( const char *wildcard, const char *match ) = 0;
+    virtual KeyValue *parseKeyValue( char *data ) = 0;
+    virtual KeyValue *parseKeyValue( Buffer *buffer ) = 0;
 };
 
-extern IGraphicsModule *graphics;
+extern IUtilModule *util;
 
 #endif

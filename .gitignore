@@ -42,3 +42,5 @@ build/spine.xcodeproj/xcuserdata
 build/spine.xcodeproj/xcuserdata/*
 build/spine.xcodeproj/project.xcworkspace/xcuserdata
 build/spine.xcodeproj/project.xcworkspace/xcuserdata/*
+test
+test/*
