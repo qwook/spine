@@ -14,20 +14,48 @@
 #define CGRAPHICS_H
 
 #include "igraphics.h"
+#include "imagedata.h"
+
+#include <vector>
 
 class CGraphicsModule : public IGraphicsModule {
 private:
+    typedef struct Scissor {
+        bool enable;
+        int x;
+        int y;
+        int width;
+        int height;
+        bool offset;
+        int ox;
+        int oy;
+        Scissor (bool enable, int x, int y, int width, int height, bool offset, int ox, int oy) : enable(enable), x(x), y(y), width(width), height(height), offset(offset), ox(ox), oy(oy) {};
+    } Scissor;
+    
+    typedef std::vector<Scissor> ScissorList;
+    ScissorList scissorStack;
+    
+    short width;
+    short height;
+    
+    int offsetX;
+    int offsetY;
+    
 public:
 
     virtual void init( IModuleManager* modulemanager );
     virtual void release();
-    virtual void initDriver();
+    virtual void initDriver( short width, short height );
     virtual void update();
     virtual bool isWindowOpen();
     
+    virtual Material loadMaterial(const char *matName, ImageData *data);
     virtual Material loadMaterial(const char *matName);
     virtual Material useMaterial(const char *matName);
     virtual Material useMaterial(unsigned int mat);
+    
+    virtual Font *loadFont(const char *fontFile, int size);
+    virtual void drawText( Font *font, const char *text, Vector2Df pos );
     
     virtual unsigned int useProgram(const char *programName);
     virtual unsigned int useProgram(unsigned int program);
@@ -40,6 +68,15 @@ public:
     
     virtual void drawQuad(float x, float y, float width, float height);
     virtual void drawQuadUV(float x, float y, float width, float height, float u1, float u2, float v1, float v2);
+    
+    virtual void setCursorVisible( bool visible );
+    virtual Vector2Df getCursorPos();
+    
+    virtual void pushScissor(bool enable, int x = 0, int y = 0, int width = 0, int height = 0, bool offset = false);
+    virtual void popScissor();
+    
+    virtual short getWidth();
+    virtual short getHeight();
 };
 
 #endif

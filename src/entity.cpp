@@ -16,7 +16,7 @@ void IEntity::spawn() {
     entitymanager->spawnEntity(this);
 }
 
-IEntity::IEntity() : zIndex(0), angle(0) {
+IEntity::IEntity() : zIndex(0), angle(0), origin(Vector2Df(0,0)) {
     entitymanager->index++;
     entIndex = entitymanager->index;
 }
@@ -58,3 +58,8 @@ bool IEntity::operator== ( const IEntity& ent )
 {
     return entIndex == ent.entIndex;
 }
+
+void IEntity::setZIndex( long z ) {
+    zIndex = z;
+    entitymanager->sort();
+};

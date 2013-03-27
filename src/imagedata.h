@@ -10,19 +10,48 @@
  
  */
 
-#ifndef CCLIENTMODULE_H
-#define CCLIENTMODULE_H
+#ifndef IMAGEDATA_H
+#define IMAGEDATA_H
 
-#include "iclient.h"
+#include "imath.h"
+#include <vector>
+#include <algorithm>
 
-class CClientModule : public IClientModule {
+#define uint unsigned int
+
+typedef struct {
+    int x;
+    int y;
+    int width;
+    int height;
+} Rect;
+
+class ImageData {
+private:
+    void resizeBillinear( uint nwidth, uint nheight );
 public:
-    virtual void init( IModuleManager* modulemanager );
-    virtual void release();
-    virtual void update();
-    virtual void render();
-    virtual void mouseDown(int mouseKey);
-    virtual void mouseUp(int mouseKey);
+    ImageData( uint width, uint height, char *src = 0 );
+    ~ImageData();
+    
+    typedef std::vector<Rect> NodeList;
+    NodeList nodes;
+    
+    void setPixel( uint x, uint y, Color col );
+    Color getPixel( uint x, uint y );
+    
+    void clear( Color col = Color(255, 255, 255) );
+    void copyRegion( ImageData *imgdat, uint x_offset = 0, uint y_offset = 0 );
+    Vector2Df getRegion( int width, int height );
+    int atlasFit( size_t index, int width, int height );
+    
+    typedef enum {
+        RESIZE_MODE_BILLINEAR
+    } ResizeMode;
+    
+    void resize( ResizeMode mode, uint nwidth, uint nheight );
+    
+    uint width, height;
+    char *data;
 };
 
 #endif

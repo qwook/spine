@@ -14,6 +14,9 @@
 #define IGRAPHICS_H
 
 #include "imodule.h"
+#include "imath.h"
+
+class Font;
 
 typedef struct {
     unsigned int mat;
@@ -21,17 +24,27 @@ typedef struct {
     unsigned int height;
 } Material;
 
+class Color {
+public:
+    Color(char r = 255, char g = 255, char b = 255, char a = 255)
+    : r(r), g(g), b(b), a(a) {};
+    char r, g, b, a;
+};
+
 class IGraphicsModule : public IModule {
 public:
     virtual void init( IModuleManager* modulemanager ) = 0;
     virtual void release() = 0;
-    virtual void initDriver() = 0;
+    virtual void initDriver( short width, short height ) = 0;
     virtual void update() = 0;
     virtual bool isWindowOpen() = 0;
     
     virtual Material loadMaterial(const char *matName) = 0;
     virtual Material useMaterial(const char *matName) = 0;
     virtual Material useMaterial(unsigned int mat) = 0;
+    
+    virtual Font *loadFont(const char *fontFile, int size) = 0;
+    virtual void drawText( Font *font, const char *text, Vector2Df pos ) = 0;
     
     virtual unsigned int useProgram(const char *programName) = 0;
     virtual unsigned int useProgram(unsigned int program) = 0;
@@ -44,6 +57,15 @@ public:
     
     virtual void drawQuad(float x, float y, float width, float height) = 0;
     virtual void drawQuadUV(float x, float y, float width, float height, float u1, float u2, float v1, float v2) = 0;
+    
+    virtual void setCursorVisible( bool visible ) = 0;
+    virtual Vector2Df getCursorPos() = 0;
+    
+    virtual void pushScissor(bool enable, int x = 0, int y = 0, int width = 0, int height = 0, bool offset = false) = 0;
+    virtual void popScissor() = 0;
+    
+    virtual short getWidth() = 0;
+    virtual short getHeight() = 0;
 };
 
 extern IGraphicsModule *graphics;

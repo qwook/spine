@@ -5,13 +5,15 @@
 
 uniform sampler2D disttex;
 uniform float texw, texh;
+uniform float alias;
 varying float oneu, onev;
 varying vec2 st;
 
 // Replacement for RSL's 'filterstep()', with fwidth() done right.
 // 'threshold ' is constant , 'value ' is smoothly varying
 float aastep (float threshold , float value) {
-    float afwidth = 0.7 * length ( vec2(dFdx(value), dFdy(value)));
+    //float afwidth = 0.7 * length ( vec2(dFdx(value), dFdy(value)));
+    float afwidth = alias * length ( vec2(dFdx(value), dFdy(value)));
     // GLSL 's fwidth(value) is abs(dFdx(value)) + abs(dFdy(value))
     return smoothstep (threshold-afwidth, threshold+afwidth, value );
 }

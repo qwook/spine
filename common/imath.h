@@ -19,86 +19,29 @@ static const double MATH_PI = 3.14159265358979323846;
 #define radtodeg(rad) ( rad * (180/MATH_PI) )
 #define degtorad(deg) ( deg * (MATH_PI/180) )
 
-template<class T> class Vector2D {
+/*class Rect {
 public:
-    T x, y;
+    float x, y, width, height;
+    Rect( float x = 0, float y = 0, float width = 0, float height = 0 ) : x(x), y(y), width(width), height(height) {};
+};*/
 
-    Vector2D( T x = 0, T y = 0 ) : x(x), y(y) {};
-    Vector2D<T> operator+ (Vector2D<T> rhs);
-    Vector2D<T> operator- (Vector2D<T> rhs);
-    Vector2D<T> operator* (float scalar);
-    Vector2D<T> operator/ (float scalar);
-
-    Vector2D<T> getRotated( float angle );
-    Vector2D<T> getNormal();
-    T getDistance(Vector2D<T> rhs) const;
-    T getDot(Vector2D<T> rhs) const;
-    T getLength() const;
-    T getAngle() const;
+class Vector2Df {
+public:
+    float x, y;
+    
+    Vector2Df( float x = 0, float y = 0 ) : x(x), y(y) {};
+    Vector2Df operator+ (Vector2Df rhs);
+    Vector2Df operator- (Vector2Df rhs);
+    Vector2Df operator* (float scalar);
+    Vector2Df operator/ (float scalar);
+    
+    Vector2Df getRotated( float angle );
+    Vector2Df getNormal();
+    float getDistance(Vector2Df rhs) const;
+    float getDot(Vector2Df rhs) const;
+    float getLength() const;
+    float getLengthSqr() const;
+    float getAngle() const;
 };
-
-typedef Vector2D<float> Vector2Df;
-
-
-template<class T>
-Vector2D<T> Vector2D<T>::operator+(Vector2D<T> rhs) {
-    return Vector2D<T>( x + rhs.x, y + rhs.y );
-}
-
-template<class T>
-Vector2D<T> Vector2D<T>::operator-(Vector2D<T> rhs) {
-    return Vector2D<T>( x - rhs.x, y - rhs.y );
-}
-
-template<class T>
-Vector2D<T> Vector2D<T>::operator*(float scalar) {
-    return Vector2D<T>( x * scalar, y * scalar );
-}
-
-template<class T>
-Vector2D<T> Vector2D<T>::operator/(float scalar) {
-    return Vector2D<T>( x / scalar, y / scalar );
-}
-
-template<class T>
-Vector2D<T> Vector2D<T>::getRotated( float angle ) {
-    float rad = degtorad(angle);
-    
-    float c = cos(rad);
-    float s = sin(rad);
-    
-    return Vector2D<T>( x*c - y*s, x*s + y*c );
-}
-
-template<class T>
-Vector2D<T> Vector2D<T>::getNormal() {
-    int len = getLength();
-    if ( len == 0 ) {
-        return 0;
-    }
-    
-    return *this / len;
-}
-
-template<class T>
-T Vector2D<T>::getDistance(Vector2D<T> rhs) const {
-    return ( rhs - *this ).getLength();
-}
-
-template<class T>
-T Vector2D<T>::getDot(Vector2D<T> rhs) const {
-    return x * rhs.x + y * rhs.y;
-}
-
-template<class T>
-T Vector2D<T>::getLength() const {
-    return sqrt( getDot(*this) );
-}
-
-template<class T>
-T Vector2D<T>::getAngle() const {
-    return radtodeg(acos(x));
-}
-
 
 #endif

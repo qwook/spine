@@ -50,7 +50,7 @@ IFileSystemModule *filesystem;
 int main( int argc, const char **argv ) {
     modulemanager = new CModuleManager;
     
-#ifdef __APPLE__2
+#ifdef __APPLE__
     CFBundleRef mainBundle = CFBundleGetMainBundle();
     CFURLRef resourcesURL = CFBundleCopyResourcesDirectoryURL(mainBundle);
     char path[PATH_MAX];
@@ -61,6 +61,7 @@ int main( int argc, const char **argv ) {
     CFRelease(resourcesURL);
     
     chdir(path);
+    printf("Changing to path: %s\n", path);
 #endif
     
     util =
@@ -72,6 +73,9 @@ int main( int argc, const char **argv ) {
     graphics =
         (IGraphicsModule *)modulemanager->
         loadModule("graphics");
+    
+    graphics->initDriver( 640, 480 );
+    
     os =
         (IOSModule *)modulemanager->
         loadModule("os");
@@ -82,13 +86,10 @@ int main( int argc, const char **argv ) {
         (IClientModule *)modulemanager->
         loadModule("client");
     
-    graphics->initDriver();
-    
     float lastFrameTime = os->getTimeInternal();
     const float FPSLimit = 90; // TODO: Make this an option.
     while (graphics->isWindowOpen()) {
         
-        os->update();
         entitymanager->update();
         client->update();
         
@@ -101,8 +102,12 @@ int main( int argc, const char **argv ) {
         }
         lastFrameTime = currentTime;
         
-        graphics->update();
+        graphics->clear();
         
+        os->update();
+        client->render();
+        
+        graphics->update();
     }
 
     delete (CModuleManager *)modulemanager;

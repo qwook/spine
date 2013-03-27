@@ -72,7 +72,7 @@ KeyValue *KeyValueParser::getKeyValue() {
     return keyval;
 }
 
-KeyValueParser::Token KeyValueParser::getNextToken(const char *dat, unsigned int *offset, unsigned int max) {
+KeyValueParser::Token KeyValueParser::getNextToken(const char *dat, unsigned long *offset, unsigned long max) {
     KeyValueParser::Token t;
     t.type = KeyValueParser::NONE;
     t.lineno = 0;
@@ -302,9 +302,9 @@ KeyValueParser::Token KeyValueParser::getNextToken(const char *dat, unsigned int
 }
 
 // Get the next token without actually traveling there.
-KeyValueParser::Token KeyValueParser::getNextTokenProtected(const char *dat, unsigned int *offset, unsigned int max) {
-    unsigned int offset_protected;
-    memcpy(&offset_protected, offset, sizeof(int));
+KeyValueParser::Token KeyValueParser::getNextTokenProtected(const char *dat, unsigned long *offset, unsigned long max) {
+    unsigned long offset_protected;
+    memcpy(&offset_protected, offset, sizeof(long));
     return getNextToken(dat, &offset_protected, max);
 }
 

@@ -82,12 +82,12 @@ public:
     char *dat;
 
 private:
-    unsigned int offset;
+    unsigned long offset;
     unsigned long max;
     KeyValue *keyval;
 
-    Token getNextToken(const char *dat, unsigned int *offset, unsigned int max);
-    Token getNextTokenProtected(const char *dat, unsigned int *offset, unsigned int max);
+    Token getNextToken(const char *dat, unsigned long *offset, unsigned long max);
+    Token getNextTokenProtected(const char *dat, unsigned long *offset, unsigned long max);
     KeyValue *parse();
 };
 

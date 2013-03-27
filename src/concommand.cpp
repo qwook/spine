@@ -10,19 +10,7 @@
  
  */
 
-#ifndef CCLIENTMODULE_H
-#define CCLIENTMODULE_H
+#include "concommand.h"
 
-#include "iclient.h"
+ConCommandList concommands;
 
-class CClientModule : public IClientModule {
-public:
-    virtual void init( IModuleManager* modulemanager );
-    virtual void release();
-    virtual void update();
-    virtual void render();
-    virtual void mouseDown(int mouseKey);
-    virtual void mouseUp(int mouseKey);
-};
-
-#endif

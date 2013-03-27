@@ -10,19 +10,32 @@
  
  */
 
-#ifndef CCLIENTMODULE_H
-#define CCLIENTMODULE_H
+#ifndef SPINE_FONTS_H
+#define SPINE_FONTS_H
 
-#include "iclient.h"
+#include <iostream>
+#include "igraphics.h"
+#include "imath.h"
 
-class CClientModule : public IClientModule {
+struct Glyph {
+    int x;
+    int y;
+    int width;
+    int height;
+    int advance;
+    int offset_x;
+    int offset_y;
+};
+
+class Font {
+    Material material;
+    Glyph glyphlist[255];
 public:
-    virtual void init( IModuleManager* modulemanager );
-    virtual void release();
-    virtual void update();
-    virtual void render();
-    virtual void mouseDown(int mouseKey);
-    virtual void mouseUp(int mouseKey);
+    Font( const char *name, unsigned int size = 18, unsigned int width = 512, unsigned int height = 512 );
+    void print() { printf("hello!\n"); };
+    void drawGlyph( char charcode, Vector2Df pos );
+    void drawString( const char *string, Vector2Df pos );
+    Vector2Df getStringSize( char *string );
 };
 
 #endif

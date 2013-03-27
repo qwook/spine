@@ -10,5 +10,5 @@ varying vec2 st;
 
 void main( void )
 {
-    gl_FragColor = vec4(texture2D(disttex, st).rgba);
+    gl_FragColor = vec4(texture2D(disttex, st).rgba) * gl_Color;
 }

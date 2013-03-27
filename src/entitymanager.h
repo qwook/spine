@@ -24,12 +24,14 @@ public:
     virtual void init( IModuleManager* modulemanager );
     virtual void release();
     virtual void update();
+    virtual void render();
     virtual void registerEntity( const char *classname, EntityFactoryFn *factory );
     virtual IEntity *createEntity( const char *classname );
     virtual void spawnEntity( IEntity *ent );
     virtual void removeEntity( IEntity *ent );
     virtual IEntity *findEntityByClass( const char *classname );
     virtual EntityMap findEntitiesByClass( const char *classname );
+    virtual void sort();
 };
 
 #endif

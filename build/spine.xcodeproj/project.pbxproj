@@ -12,81 +12,91 @@
 		D51920C516A675A600014308 /* modulemanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D51920C416A675A600014308 /* modulemanager.cpp */; };
 		D51920F416A67ECF00014308 /* os.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D51920F216A67ECF00014308 /* os.cpp */; };
 		D51920F516A67ECF00014308 /* os.h in Headers */ = {isa = PBXBuildFile; fileRef = D51920F316A67ECF00014308 /* os.h */; };
-		D554AC0416A9A5EB00F28B9F /* graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D554ABF116A99AAC00F28B9F /* graphics.cpp */; };
-		D554AC0716A9A5FC00F28B9F /* graphics.h in Headers */ = {isa = PBXBuildFile; fileRef = D554ABF216A99AAC00F28B9F /* graphics.h */; };
 		D554AC0A16A9A7E200F28B9F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BBEBA41695DE8800AB9087 /* OpenGL.framework */; };
-		D554AC0D16A9B1CA00F28B9F /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */; };
-		D554AC0E16A9B1E100F28B9F /* libglfw.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */; };
 		D554AC2716AC11F400F28B9F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BBEBA41695DE8800AB9087 /* OpenGL.framework */; };
-		D554AC2816AC11F400F28B9F /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */; };
-		D554AC2A16AC11F400F28B9F /* graphics.h in Headers */ = {isa = PBXBuildFile; fileRef = D554ABF216A99AAC00F28B9F /* graphics.h */; };
-		D554AC2C16AC11F400F28B9F /* libglfw.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */; };
 		D554AC2E16AC11F400F28B9F /* default.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = D554AC1316A9BE0E00F28B9F /* default.vsh */; };
 		D554AC2F16AC11F400F28B9F /* default.fsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = D554AC1616A9BE4300F28B9F /* default.fsh */; };
-		D554AC3616AC122500F28B9F /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D554AC2016AC11EE00F28B9F /* util.cpp */; };
-		D554AC3716AC122500F28B9F /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = D554AC2116AC11EE00F28B9F /* util.h */; };
-		D5A925A716BE989600F4EBD8 /* libGLEW.1.9.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A925A616BE989600F4EBD8 /* libGLEW.1.9.0.dylib */; };
-		D5A925A816BE989E00F4EBD8 /* libGLEW.1.9.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = D5A925A616BE989600F4EBD8 /* libGLEW.1.9.0.dylib */; };
+		D55E077116E56846006E0AD8 /* libglfw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F48EC416C6AC8700DB1A03 /* libglfw.a */; };
+		D55E077416E66E9D006E0AD8 /* libGLEW.1.9.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D55E077216E66E9D006E0AD8 /* libGLEW.1.9.0.dylib */; };
+		D55E077516E66EA7006E0AD8 /* libGLEW.1.9.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = D55E077216E66E9D006E0AD8 /* libGLEW.1.9.0.dylib */; };
+		D55E077616E66EAD006E0AD8 /* libglfw.a in Copy Files */ = {isa = PBXBuildFile; fileRef = D5F48EC416C6AC8700DB1A03 /* libglfw.a */; };
+		D55E077716E66EB0006E0AD8 /* libfreetype.a in Copy Files */ = {isa = PBXBuildFile; fileRef = D5A925C116C1958000F4EBD8 /* libfreetype.a */; };
+		D55E078016E6709A006E0AD8 /* panel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D57B02C916D5B78300CB8B40 /* panel.cpp */; };
+		D55E078116E6709A006E0AD8 /* panel.h in Headers */ = {isa = PBXBuildFile; fileRef = D57B02CA16D5B78300CB8B40 /* panel.h */; };
+		D55E078216E6709A006E0AD8 /* client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5BAC41016A8A21700FB3924 /* client.cpp */; };
+		D55E078316E6709A006E0AD8 /* client.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BAC41116A8A21700FB3924 /* client.h */; };
+		D55E078416E6709A006E0AD8 /* keys.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5F48ED616C6E48800DB1A03 /* keys.cpp */; };
+		D55E078516E6709A006E0AD8 /* keys.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F48ED716C6E48800DB1A03 /* keys.h */; };
+		D55E078616E6709A006E0AD8 /* concommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5F48ED216C6DDEC00DB1A03 /* concommand.cpp */; };
+		D55E078716E6709A006E0AD8 /* concommand.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F48ED316C6DDEC00DB1A03 /* concommand.h */; };
+		D55E079316E670A8006E0AD8 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D554AC2016AC11EE00F28B9F /* util.cpp */; };
+		D55E079416E670A8006E0AD8 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = D554AC2116AC11EE00F28B9F /* util.h */; };
+		D55E079516E670A8006E0AD8 /* keyval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5F494E516AD7A310097F121 /* keyval.cpp */; };
+		D55E079616E670A8006E0AD8 /* keyval.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F494E616AD7A310097F121 /* keyval.h */; };
+		D55E079816E6725E006E0AD8 /* graphics.h in Headers */ = {isa = PBXBuildFile; fileRef = D554ABF216A99AAC00F28B9F /* graphics.h */; };
+		D55E079916E6725E006E0AD8 /* imagedata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5F48EB816C67F9100DB1A03 /* imagedata.cpp */; };
+		D55E079A16E6725E006E0AD8 /* imagedata.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F48EBB16C67FBD00DB1A03 /* imagedata.h */; };
+		D55E079C16E6725E006E0AD8 /* fonts.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F48EBF16C685C600DB1A03 /* fonts.h */; };
+		D55E079D16E6726B006E0AD8 /* fonts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5F48EBE16C685C600DB1A03 /* fonts.cpp */; };
+		D55E07B216E677CE006E0AD8 /* graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D55E07B116E677CE006E0AD8 /* graphics.cpp */; };
 		D5A925A916BE99A700F4EBD8 /* OpenGL.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = D5BBEBA41695DE8800AB9087 /* OpenGL.framework */; };
 		D5A925AB16BEA1D900F4EBD8 /* sdfield.fsh in Sources */ = {isa = PBXBuildFile; fileRef = D5A925AA16BEA1D900F4EBD8 /* sdfield.fsh */; };
 		D5A925AD16BEA23400F4EBD8 /* sdfield.vsh in Sources */ = {isa = PBXBuildFile; fileRef = D5A925AC16BEA23400F4EBD8 /* sdfield.vsh */; };
 		D5A925AF16BEA25F00F4EBD8 /* sdfield.kv in Resources */ = {isa = PBXBuildFile; fileRef = D5A925AE16BEA25F00F4EBD8 /* sdfield.kv */; };
-		D5A925B016BEA28600F4EBD8 /* sdfield.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5A925AC16BEA23400F4EBD8 /* sdfield.vsh */; };
-		D5A925B116BEA28A00F4EBD8 /* sdfield.fsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5A925AA16BEA1D900F4EBD8 /* sdfield.fsh */; };
-		D5A925B216BEA28C00F4EBD8 /* sdfield.kv in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5A925AE16BEA25F00F4EBD8 /* sdfield.kv */; };
+		D5A925B016BEA28600F4EBD8 /* sdfield.vsh in Copy Files */ = {isa = PBXBuildFile; fileRef = D5A925AC16BEA23400F4EBD8 /* sdfield.vsh */; };
+		D5A925B116BEA28A00F4EBD8 /* sdfield.fsh in Copy Files */ = {isa = PBXBuildFile; fileRef = D5A925AA16BEA1D900F4EBD8 /* sdfield.fsh */; };
+		D5A925B216BEA28C00F4EBD8 /* sdfield.kv in Copy Files */ = {isa = PBXBuildFile; fileRef = D5A925AE16BEA25F00F4EBD8 /* sdfield.kv */; };
 		D5A925B516BEA38600F4EBD8 /* disttex.tga in Resources */ = {isa = PBXBuildFile; fileRef = D5A925B416BEA38600F4EBD8 /* disttex.tga */; };
-		D5A925B616BEA39100F4EBD8 /* disttex.tga in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5A925B416BEA38600F4EBD8 /* disttex.tga */; };
+		D5A925B616BEA39100F4EBD8 /* disttex.tga in Copy Files */ = {isa = PBXBuildFile; fileRef = D5A925B416BEA38600F4EBD8 /* disttex.tga */; };
 		D5A925BB16BFA59200F4EBD8 /* 8.tga in Resources */ = {isa = PBXBuildFile; fileRef = D5A925BA16BFA59200F4EBD8 /* 8.tga */; };
-		D5A925BC16BFA59700F4EBD8 /* 8.tga in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5A925BA16BFA59200F4EBD8 /* 8.tga */; };
+		D5A925BC16BFA59700F4EBD8 /* 8.tga in Copy Files */ = {isa = PBXBuildFile; fileRef = D5A925BA16BFA59200F4EBD8 /* 8.tga */; };
+		D5A925C416C1958900F4EBD8 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A925C116C1958000F4EBD8 /* libfreetype.a */; };
+		D5A925C716C19E6500F4EBD8 /* UbuntuMono-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5A925C616C19E6500F4EBD8 /* UbuntuMono-R.ttf */; };
+		D5A925C916C19E8400F4EBD8 /* UbuntuMono-R.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5A925C616C19E6500F4EBD8 /* UbuntuMono-R.ttf */; };
 		D5B5678E1695A94900F0E68E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B5678D1695A94900F0E68E /* Cocoa.framework */; };
 		D5BAC40016A79A4300FB3924 /* entitymanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5BAC3E516A77C2300FB3924 /* entitymanager.cpp */; };
 		D5BAC40116A79A4300FB3924 /* entitymanager.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BAC3E616A77C2300FB3924 /* entitymanager.h */; };
 		D5BAC40816A7C97700FB3924 /* entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5BAC40716A7C97700FB3924 /* entity.cpp */; };
-		D5BAC42016A8A25500FB3924 /* client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5BAC41016A8A21700FB3924 /* client.cpp */; };
-		D5BAC42116A8A25500FB3924 /* client.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BAC41116A8A21700FB3924 /* client.h */; };
 		D5BBEBA51695DE8800AB9087 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BBEBA41695DE8800AB9087 /* OpenGL.framework */; };
 		D5BBEBBE1695DEB900AB9087 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BBEBBD1695DEB900AB9087 /* IOKit.framework */; };
 		D5D9D1FB16B26C860041AFA8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BBEBA41695DE8800AB9087 /* OpenGL.framework */; };
-		D5D9D1FC16B26C860041AFA8 /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */; };
-		D5D9D1FE16B26C860041AFA8 /* graphics.h in Headers */ = {isa = PBXBuildFile; fileRef = D554ABF216A99AAC00F28B9F /* graphics.h */; };
-		D5D9D20016B26C860041AFA8 /* libglfw.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */; };
 		D5D9D20216B26C860041AFA8 /* default.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = D554AC1316A9BE0E00F28B9F /* default.vsh */; };
 		D5D9D20316B26C860041AFA8 /* default.fsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = D554AC1616A9BE4300F28B9F /* default.fsh */; };
 		D5D9D20816B26CAB0041AFA8 /* filesystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D9D1F216B1564E0041AFA8 /* filesystem.cpp */; };
 		D5D9D20916B26CAF0041AFA8 /* filesystem.h in Headers */ = {isa = PBXBuildFile; fileRef = D5D9D1F316B1564E0041AFA8 /* filesystem.h */; };
 		D5D9D20A16B26CBB0041AFA8 /* ifilesystem.h in Headers */ = {isa = PBXBuildFile; fileRef = D5D9D1F516B156620041AFA8 /* ifilesystem.h */; };
-		D5D9D21216B2D29F0041AFA8 /* libGLEW.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D554AC0F16A9BAC800F28B9F /* libGLEW.dylib */; };
-		D5D9D21316B2D29F0041AFA8 /* libglfw.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */; };
 		D5D9D21516B2D3270041AFA8 /* os.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D51920E516A67E9600014308 /* os.dylib */; };
 		D5D9D21616B2D3270041AFA8 /* entitymanager.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5BAC3FD16A77C8A00FB3924 /* entitymanager.dylib */; };
 		D5D9D21716B2D3270041AFA8 /* client.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5BAC41D16A8A22100FB3924 /* client.dylib */; };
 		D5D9D21816B2D3270041AFA8 /* graphics.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D554ABFD16A99CAA00F28B9F /* graphics.dylib */; };
 		D5D9D21916B2D3270041AFA8 /* util.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D554AC3316AC11F400F28B9F /* util.dylib */; };
 		D5D9D21A16B2D3270041AFA8 /* filesystem.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5D9D20716B26C860041AFA8 /* filesystem.dylib */; };
-		D5D9D21C16B2FB800041AFA8 /* default.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = D554AC1316A9BE0E00F28B9F /* default.vsh */; };
-		D5D9D21D16B2FB800041AFA8 /* default.fsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = D554AC1616A9BE4300F28B9F /* default.fsh */; };
+		D5D9D21C16B2FB800041AFA8 /* default.vsh in Copy Files */ = {isa = PBXBuildFile; fileRef = D554AC1316A9BE0E00F28B9F /* default.vsh */; };
+		D5D9D21D16B2FB800041AFA8 /* default.fsh in Copy Files */ = {isa = PBXBuildFile; fileRef = D554AC1616A9BE4300F28B9F /* default.fsh */; };
 		D5D9D21F16B2FBC50041AFA8 /* default.kv in Resources */ = {isa = PBXBuildFile; fileRef = D5D9D21E16B2FBC50041AFA8 /* default.kv */; };
-		D5D9D22016B322150041AFA8 /* default.kv in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5D9D21E16B2FBC50041AFA8 /* default.kv */; };
+		D5D9D22016B322150041AFA8 /* default.kv in Copy Files */ = {isa = PBXBuildFile; fileRef = D5D9D21E16B2FBC50041AFA8 /* default.kv */; };
 		D5D9D22216B3A6B70041AFA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D9D22116B3A6B60041AFA8 /* Foundation.framework */; };
 		D5D9D22316B3A7620041AFA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D9D22116B3A6B60041AFA8 /* Foundation.framework */; };
-		D5F494E716AD7A310097F121 /* keyval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5F494E516AD7A310097F121 /* keyval.cpp */; };
-		D5F494EA16AD7ACF0097F121 /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */; };
+		D5F48ECE16C6CC9E00DB1A03 /* DroidSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5F48ECC16C6CC9E00DB1A03 /* DroidSans-Bold.ttf */; };
+		D5F48ECF16C6CC9E00DB1A03 /* DroidSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5F48ECD16C6CC9E00DB1A03 /* DroidSans.ttf */; };
+		D5F48ED016C6CCB100DB1A03 /* DroidSans.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5F48ECD16C6CC9E00DB1A03 /* DroidSans.ttf */; };
+		D5F48ED116C6CCBC00DB1A03 /* DroidSans-Bold.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5F48ECC16C6CC9E00DB1A03 /* DroidSans-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D554ABFE16A99CE000F28B9F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D5B567801695A94800F0E68E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D554ABF316A99CAA00F28B9F;
-			remoteInfo = graphics;
-		};
 		D554AC3416AC121400F28B9F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D5B567801695A94800F0E68E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D554AC2216AC11F400F28B9F;
 			remoteInfo = util;
+		};
+		D55E077816E66F10006E0AD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5B567801695A94800F0E68E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D554ABF316A99CAA00F28B9F;
+			remoteInfo = graphics;
 		};
 		D5BAC40216A7B02C00FB3924 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -125,8 +135,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D5A925A816BE989E00F4EBD8 /* libGLEW.1.9.0.dylib in Copy Files */,
-				D554AC0E16A9B1E100F28B9F /* libglfw.dylib in Copy Files */,
+				D55E077716E66EB0006E0AD8 /* libfreetype.a in Copy Files */,
+				D55E077616E66EAD006E0AD8 /* libglfw.a in Copy Files */,
+				D55E077516E66EA7006E0AD8 /* libGLEW.1.9.0.dylib in Copy Files */,
 				D5A925A916BE99A700F4EBD8 /* OpenGL.framework in Copy Files */,
 			);
 			name = "Copy Files";
@@ -136,7 +147,7 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 7;
+			dstSubfolderSpec = 6;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,7 +158,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D554AC2C16AC11F400F28B9F /* libglfw.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +169,18 @@
 			files = (
 				D554AC2E16AC11F400F28B9F /* default.vsh in CopyFiles */,
 				D554AC2F16AC11F400F28B9F /* default.fsh in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A925C816C19E7700F4EBD8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = fonts;
+			dstSubfolderSpec = 7;
+			files = (
+				D5A925C916C19E8400F4EBD8 /* UbuntuMono-R.ttf in CopyFiles */,
+				D5F48ED016C6CCB100DB1A03 /* DroidSans.ttf in CopyFiles */,
+				D5F48ED116C6CCBC00DB1A03 /* DroidSans-Bold.ttf in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +208,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D5D9D20016B26C860041AFA8 /* libglfw.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,21 +237,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5D9D21B16B2FB6E0041AFA8 /* CopyFiles */ = {
+		D5D9D21B16B2FB6E0041AFA8 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = shaders;
 			dstSubfolderSpec = 7;
 			files = (
-				D5A925B616BEA39100F4EBD8 /* disttex.tga in CopyFiles */,
-				D5A925BC16BFA59700F4EBD8 /* 8.tga in CopyFiles */,
-				D5A925B016BEA28600F4EBD8 /* sdfield.vsh in CopyFiles */,
-				D5A925B116BEA28A00F4EBD8 /* sdfield.fsh in CopyFiles */,
-				D5A925B216BEA28C00F4EBD8 /* sdfield.kv in CopyFiles */,
-				D5D9D22016B322150041AFA8 /* default.kv in CopyFiles */,
-				D5D9D21C16B2FB800041AFA8 /* default.vsh in CopyFiles */,
-				D5D9D21D16B2FB800041AFA8 /* default.fsh in CopyFiles */,
+				D5A925B616BEA39100F4EBD8 /* disttex.tga in Copy Files */,
+				D5A925BC16BFA59700F4EBD8 /* 8.tga in Copy Files */,
+				D5A925B016BEA28600F4EBD8 /* sdfield.vsh in Copy Files */,
+				D5A925B116BEA28A00F4EBD8 /* sdfield.fsh in Copy Files */,
+				D5A925B216BEA28C00F4EBD8 /* sdfield.kv in Copy Files */,
+				D5D9D22016B322150041AFA8 /* default.kv in Copy Files */,
+				D5D9D21C16B2FB800041AFA8 /* default.vsh in Copy Files */,
+				D5D9D21D16B2FB800041AFA8 /* default.fsh in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D5EE116716A6893800EEB96B /* CopyFiles */ = {
@@ -246,10 +268,8 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = "";
-			dstSubfolderSpec = 6;
+			dstSubfolderSpec = 10;
 			files = (
-				D5D9D21216B2D29F0041AFA8 /* libGLEW.dylib in CopyFiles */,
-				D5D9D21316B2D29F0041AFA8 /* libglfw.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,23 +291,25 @@
 		D51920F216A67ECF00014308 /* os.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = os.cpp; path = ../../src/os.cpp; sourceTree = "<group>"; };
 		D51920F316A67ECF00014308 /* os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = os.h; path = ../../src/os.h; sourceTree = "<group>"; };
 		D554ABF016A99A9900F28B9F /* igraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = igraphics.h; path = ../common/igraphics.h; sourceTree = "<group>"; };
-		D554ABF116A99AAC00F28B9F /* graphics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = graphics.cpp; path = ../../src/graphics.cpp; sourceTree = "<group>"; };
 		D554ABF216A99AAC00F28B9F /* graphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = graphics.h; path = ../../src/graphics.h; sourceTree = "<group>"; };
 		D554ABFD16A99CAA00F28B9F /* graphics.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = graphics.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.dylib; path = "../../glfw-2.7.7/lib/cocoa/libglfw.dylib"; sourceTree = "<group>"; };
-		D554AC0F16A9BAC800F28B9F /* libGLEW.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.dylib; path = ../../glew/lib/libGLEW.dylib; sourceTree = "<group>"; };
 		D554AC1316A9BE0E00F28B9F /* default.vsh */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = default.vsh; path = ../shaders/default.vsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		D554AC1616A9BE4300F28B9F /* default.fsh */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = default.fsh; path = ../shaders/default.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		D554AC2016AC11EE00F28B9F /* util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = ../../src/util.cpp; sourceTree = "<group>"; };
 		D554AC2116AC11EE00F28B9F /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = util.h; path = ../../src/util.h; sourceTree = "<group>"; };
 		D554AC3316AC11F400F28B9F /* util.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = util.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		D554AC3816AC124800F28B9F /* iutil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = iutil.h; path = ../common/iutil.h; sourceTree = "<group>"; };
-		D5A925A616BE989600F4EBD8 /* libGLEW.1.9.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.9.0.dylib; path = ../../glew/lib/libGLEW.1.9.0.dylib; sourceTree = "<group>"; };
+		D55E077216E66E9D006E0AD8 /* libGLEW.1.9.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.9.0.dylib; path = ../../glew/lib/libGLEW.1.9.0.dylib; sourceTree = "<group>"; };
+		D55E07B116E677CE006E0AD8 /* graphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = graphics.cpp; path = ../../src/graphics.cpp; sourceTree = "<group>"; };
+		D57B02C916D5B78300CB8B40 /* panel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = panel.cpp; path = ../../src/panel.cpp; sourceTree = "<group>"; };
+		D57B02CA16D5B78300CB8B40 /* panel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = panel.h; path = ../../src/panel.h; sourceTree = "<group>"; };
 		D5A925AA16BEA1D900F4EBD8 /* sdfield.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = sdfield.fsh; path = ../shaders/sdfield.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		D5A925AC16BEA23400F4EBD8 /* sdfield.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = sdfield.vsh; path = ../shaders/sdfield.vsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		D5A925AE16BEA25F00F4EBD8 /* sdfield.kv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sdfield.kv; path = ../shaders/sdfield.kv; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		D5A925B416BEA38600F4EBD8 /* disttex.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = disttex.tga; path = ../media/disttex.tga; sourceTree = "<group>"; };
 		D5A925BA16BFA59200F4EBD8 /* 8.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = 8.tga; path = ../media/8.tga; sourceTree = "<group>"; };
+		D5A925C116C1958000F4EBD8 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = "../../freetype-2.4.11/objs/libfreetype.a"; sourceTree = "<group>"; };
+		D5A925C616C19E6500F4EBD8 /* UbuntuMono-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-R.ttf"; path = "../media/fonts/UbuntuMono-R.ttf"; sourceTree = "<group>"; };
 		D5B567891695A94900F0E68E /* spine_dbg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spine_dbg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B5678D1695A94900F0E68E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D5B567901695A94900F0E68E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -313,6 +335,17 @@
 		D5D9D20716B26C860041AFA8 /* filesystem.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = filesystem.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D9D21E16B2FBC50041AFA8 /* default.kv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = default.kv; path = ../shaders/default.kv; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		D5D9D22116B3A6B60041AFA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D5F48EB816C67F9100DB1A03 /* imagedata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imagedata.cpp; path = ../../src/imagedata.cpp; sourceTree = "<group>"; };
+		D5F48EBB16C67FBD00DB1A03 /* imagedata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imagedata.h; path = ../../src/imagedata.h; sourceTree = "<group>"; };
+		D5F48EBE16C685C600DB1A03 /* fonts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fonts.cpp; path = ../../src/fonts.cpp; sourceTree = "<group>"; };
+		D5F48EBF16C685C600DB1A03 /* fonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fonts.h; path = ../../src/fonts.h; sourceTree = "<group>"; };
+		D5F48EC416C6AC8700DB1A03 /* libglfw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw.a; path = "../../glfw-2.7.7/lib/cocoa/libglfw.a"; sourceTree = "<group>"; };
+		D5F48ECC16C6CC9E00DB1A03 /* DroidSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DroidSans-Bold.ttf"; path = "../media/fonts/DroidSans-Bold.ttf"; sourceTree = "<group>"; };
+		D5F48ECD16C6CC9E00DB1A03 /* DroidSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = DroidSans.ttf; path = ../media/fonts/DroidSans.ttf; sourceTree = "<group>"; };
+		D5F48ED216C6DDEC00DB1A03 /* concommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = concommand.cpp; path = ../../src/concommand.cpp; sourceTree = "<group>"; };
+		D5F48ED316C6DDEC00DB1A03 /* concommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = concommand.h; path = ../../src/concommand.h; sourceTree = "<group>"; };
+		D5F48ED616C6E48800DB1A03 /* keys.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = keys.cpp; path = ../../src/keys.cpp; sourceTree = "<group>"; };
+		D5F48ED716C6E48800DB1A03 /* keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = keys.h; path = ../../src/keys.h; sourceTree = "<group>"; };
 		D5F494E516AD7A310097F121 /* keyval.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = keyval.cpp; path = ../../src/keyval.cpp; sourceTree = "<group>"; };
 		D5F494E616AD7A310097F121 /* keyval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = keyval.h; path = ../../src/keyval.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -322,7 +355,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5F494EA16AD7ACF0097F121 /* libglfw.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,10 +362,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5A925A716BE989600F4EBD8 /* libGLEW.1.9.0.dylib in Frameworks */,
+				D5A925C416C1958900F4EBD8 /* libfreetype.a in Frameworks */,
+				D55E077116E56846006E0AD8 /* libglfw.a in Frameworks */,
 				D5D9D22216B3A6B70041AFA8 /* Foundation.framework in Frameworks */,
 				D554AC0A16A9A7E200F28B9F /* OpenGL.framework in Frameworks */,
-				D554AC0D16A9B1CA00F28B9F /* libglfw.dylib in Frameworks */,
+				D55E077416E66E9D006E0AD8 /* libGLEW.1.9.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +375,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D554AC2716AC11F400F28B9F /* OpenGL.framework in Frameworks */,
-				D554AC2816AC11F400F28B9F /* libglfw.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +408,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5D9D1FB16B26C860041AFA8 /* OpenGL.framework in Frameworks */,
-				D5D9D1FC16B26C860041AFA8 /* libglfw.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,8 +437,12 @@
 		D554ABEE16A99A7400F28B9F /* graphics */ = {
 			isa = PBXGroup;
 			children = (
-				D554ABF116A99AAC00F28B9F /* graphics.cpp */,
+				D55E07B116E677CE006E0AD8 /* graphics.cpp */,
 				D554ABF216A99AAC00F28B9F /* graphics.h */,
+				D5F48EB816C67F9100DB1A03 /* imagedata.cpp */,
+				D5F48EBB16C67FBD00DB1A03 /* imagedata.h */,
+				D5F48EBE16C685C600DB1A03 /* fonts.cpp */,
+				D5F48EBF16C685C600DB1A03 /* fonts.h */,
 			);
 			name = graphics;
 			path = os;
@@ -441,21 +476,28 @@
 		D5A925B316BEA37300F4EBD8 /* media */ = {
 			isa = PBXGroup;
 			children = (
+				D5A925C516C19E4900F4EBD8 /* fonts */,
 				D5A925B416BEA38600F4EBD8 /* disttex.tga */,
 				D5A925BA16BFA59200F4EBD8 /* 8.tga */,
 			);
 			name = media;
 			sourceTree = "<group>";
 		};
+		D5A925C516C19E4900F4EBD8 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D5A925C616C19E6500F4EBD8 /* UbuntuMono-R.ttf */,
+				D5F48ECC16C6CC9E00DB1A03 /* DroidSans-Bold.ttf */,
+				D5F48ECD16C6CC9E00DB1A03 /* DroidSans.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
 		D5B5677E1695A94800F0E68E = {
 			isa = PBXGroup;
 			children = (
-				D5A925A616BE989600F4EBD8 /* libGLEW.1.9.0.dylib */,
-				D5D9D22116B3A6B60041AFA8 /* Foundation.framework */,
-				D554AC0F16A9BAC800F28B9F /* libGLEW.dylib */,
-				D554AC0C16A9B1CA00F28B9F /* libglfw.dylib */,
-				D5BBEBBD1695DEB900AB9087 /* IOKit.framework */,
-				D5BBEBA41695DE8800AB9087 /* OpenGL.framework */,
+				D5B5678C1695A94900F0E68E /* Frameworks */,
+				D5B5678A1695A94900F0E68E /* Products */,
 				D5BAC40916A7CC0900FB3924 /* interfaces */,
 				D5A925B316BEA37300F4EBD8 /* media */,
 				D554AC1516A9BE1900F28B9F /* shaders */,
@@ -465,8 +507,6 @@
 				D554AC1E16AC11D700F28B9F /* util */,
 				D51920E616A67E9600014308 /* os */,
 				D5BAC3FE16A78E7400FB3924 /* entitymanager */,
-				D5B5678C1695A94900F0E68E /* Frameworks */,
-				D5B5678A1695A94900F0E68E /* Products */,
 				D51920C016A6750B00014308 /* main.cpp */,
 				D51920C416A675A600014308 /* modulemanager.cpp */,
 				D51920BF16A6750B00014308 /* math.cpp */,
@@ -493,6 +533,12 @@
 		D5B5678C1695A94900F0E68E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5D9D22116B3A6B60041AFA8 /* Foundation.framework */,
+				D5F48EC416C6AC8700DB1A03 /* libglfw.a */,
+				D55E077216E66E9D006E0AD8 /* libGLEW.1.9.0.dylib */,
+				D5A925C116C1958000F4EBD8 /* libfreetype.a */,
+				D5BBEBBD1695DEB900AB9087 /* IOKit.framework */,
+				D5BBEBA41695DE8800AB9087 /* OpenGL.framework */,
 				D5B5678D1695A94900F0E68E /* Cocoa.framework */,
 				D5B567AB1695A94A00F0E68E /* SenTestingKit.framework */,
 				D51920CB16A6767200014308 /* CoreFoundation.framework */,
@@ -540,8 +586,14 @@
 		D5BAC40B16A7EA9700FB3924 /* client */ = {
 			isa = PBXGroup;
 			children = (
+				D57B02C916D5B78300CB8B40 /* panel.cpp */,
+				D57B02CA16D5B78300CB8B40 /* panel.h */,
 				D5BAC41016A8A21700FB3924 /* client.cpp */,
 				D5BAC41116A8A21700FB3924 /* client.h */,
+				D5F48ED616C6E48800DB1A03 /* keys.cpp */,
+				D5F48ED716C6E48800DB1A03 /* keys.h */,
+				D5F48ED216C6DDEC00DB1A03 /* concommand.cpp */,
+				D5F48ED316C6DDEC00DB1A03 /* concommand.h */,
 			);
 			name = client;
 			path = os;
@@ -571,7 +623,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D554AC0716A9A5FC00F28B9F /* graphics.h in Headers */,
+				D55E079816E6725E006E0AD8 /* graphics.h in Headers */,
+				D55E079A16E6725E006E0AD8 /* imagedata.h in Headers */,
+				D55E079C16E6725E006E0AD8 /* fonts.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,8 +633,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D554AC2A16AC11F400F28B9F /* graphics.h in Headers */,
-				D554AC3716AC122500F28B9F /* util.h in Headers */,
+				D55E079416E670A8006E0AD8 /* util.h in Headers */,
+				D55E079616E670A8006E0AD8 /* keyval.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,7 +650,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5BAC42116A8A25500FB3924 /* client.h in Headers */,
+				D55E078116E6709A006E0AD8 /* panel.h in Headers */,
+				D55E078316E6709A006E0AD8 /* client.h in Headers */,
+				D55E078516E6709A006E0AD8 /* keys.h in Headers */,
+				D55E078716E6709A006E0AD8 /* concommand.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,7 +661,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5D9D1FE16B26C860041AFA8 /* graphics.h in Headers */,
 				D5D9D20916B26CAF0041AFA8 /* filesystem.h in Headers */,
 				D5D9D20A16B26CBB0041AFA8 /* ifilesystem.h in Headers */,
 			);
@@ -678,14 +734,15 @@
 				D5B567871695A94900F0E68E /* Resources */,
 				D5EE116916A689A200EEB96B /* CopyFiles */,
 				D5D9D21416B2D30F0041AFA8 /* CopyFiles */,
-				D5D9D21B16B2FB6E0041AFA8 /* CopyFiles */,
+				D5D9D21B16B2FB6E0041AFA8 /* Copy Files */,
+				D5A925C816C19E7700F4EBD8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D55E077916E66F10006E0AD8 /* PBXTargetDependency */,
 				D5D9D21116B2D1960041AFA8 /* PBXTargetDependency */,
 				D554AC3516AC121400F28B9F /* PBXTargetDependency */,
-				D554ABFF16A99CE000F28B9F /* PBXTargetDependency */,
 				D5BAC41F16A8A24E00FB3924 /* PBXTargetDependency */,
 				D5BAC40316A7B02C00FB3924 /* PBXTargetDependency */,
 				D5EE116316A6832300EEB96B /* PBXTargetDependency */,
@@ -791,6 +848,9 @@
 				D5A925AF16BEA25F00F4EBD8 /* sdfield.kv in Resources */,
 				D5A925B516BEA38600F4EBD8 /* disttex.tga in Resources */,
 				D5A925BB16BFA59200F4EBD8 /* 8.tga in Resources */,
+				D5A925C716C19E6500F4EBD8 /* UbuntuMono-R.ttf in Resources */,
+				D5F48ECE16C6CC9E00DB1A03 /* DroidSans-Bold.ttf in Resources */,
+				D5F48ECF16C6CC9E00DB1A03 /* DroidSans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,7 +869,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D554AC0416A9A5EB00F28B9F /* graphics.cpp in Sources */,
+				D55E079916E6725E006E0AD8 /* imagedata.cpp in Sources */,
+				D55E079D16E6726B006E0AD8 /* fonts.cpp in Sources */,
+				D55E07B216E677CE006E0AD8 /* graphics.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,8 +879,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D554AC3616AC122500F28B9F /* util.cpp in Sources */,
-				D5F494E716AD7A310097F121 /* keyval.cpp in Sources */,
+				D55E079316E670A8006E0AD8 /* util.cpp in Sources */,
+				D55E079516E670A8006E0AD8 /* keyval.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -847,7 +909,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5BAC42016A8A25500FB3924 /* client.cpp in Sources */,
+				D55E078016E6709A006E0AD8 /* panel.cpp in Sources */,
+				D55E078216E6709A006E0AD8 /* client.cpp in Sources */,
+				D55E078416E6709A006E0AD8 /* keys.cpp in Sources */,
+				D55E078616E6709A006E0AD8 /* concommand.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -862,15 +927,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D554ABFF16A99CE000F28B9F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D554ABF316A99CAA00F28B9F /* graphics */;
-			targetProxy = D554ABFE16A99CE000F28B9F /* PBXContainerItemProxy */;
-		};
 		D554AC3516AC121400F28B9F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D554AC2216AC11F400F28B9F /* util */;
 			targetProxy = D554AC3416AC121400F28B9F /* PBXContainerItemProxy */;
+		};
+		D55E077916E66F10006E0AD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D554ABF316A99CAA00F28B9F /* graphics */;
+			targetProxy = D55E077816E66F10006E0AD8 /* PBXContainerItemProxy */;
 		};
 		D5BAC40316A7B02C00FB3924 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -951,12 +1016,14 @@
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../glfw-2.7.7/include\"",
 					"\"$(SRCROOT)/../../glew/include\"",
+					"\"$(SRCROOT)/../../freetype-2.4.11/include\"",
 				);
 				INSTALL_PATH = "@executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../glfw-2.7.7/lib/cocoa\"",
 					"\"$(SRCROOT)/../../glew/lib\"",
+					"\"$(SRCROOT)/../../freetype-2.4.11/objs\"",
 				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = (
@@ -979,12 +1046,14 @@
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../glfw-2.7.7/include\"",
 					"\"$(SRCROOT)/../../glew/include\"",
+					"\"$(SRCROOT)/../../freetype-2.4.11/include\"",
 				);
 				INSTALL_PATH = "@executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../glfw-2.7.7/lib/cocoa\"",
 					"\"$(SRCROOT)/../../glew/lib\"",
+					"\"$(SRCROOT)/../../freetype-2.4.11/objs\"",
 				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = (
@@ -1064,6 +1133,7 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "@loader_path/../Frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1078,6 +1148,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
@@ -1097,6 +1168,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "@loader_path/../Frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_ENABLE_SYMBOL_SEPARATION = NO;
@@ -1104,6 +1176,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				SDKROOT = macosx;
@@ -1134,7 +1207,12 @@
 				);
 				INFOPLIST_FILE = "Spine-Info.plist";
 				INSTALL_PATH = /;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LD_DYLIB_INSTALL_NAME = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../freetype-2.4.11/objs\"",
+					"\"$(SRCROOT)/../../glew/lib\"",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fasm-blocks";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
@@ -1169,7 +1247,12 @@
 				);
 				INFOPLIST_FILE = "Spine-Info.plist";
 				INSTALL_PATH = /;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LD_DYLIB_INSTALL_NAME = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../freetype-2.4.11/objs\"",
+					"\"$(SRCROOT)/../../glew/lib\"",
+				);
 				OTHER_CFLAGS = "-fasm-blocks";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

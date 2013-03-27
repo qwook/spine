@@ -25,9 +25,8 @@ using namespace std;
 
 class IEntity {
 private:
-    Vector2Df origin;
     float angle;
-    float zIndex;
+    long zIndex;
     unsigned long entIndex;
 public:
     IEntity();
@@ -43,7 +42,11 @@ public:
     const char *getClassName();
     unsigned long getEntIndex();
     
+    virtual void setZIndex( long z );
+    virtual long getZIndex() { return zIndex; };
+    
     char internalClassName;
+    Vector2Df origin;
 };
 
 typedef IEntity* EntityFactoryFn();
@@ -57,12 +60,15 @@ public:
     virtual void init( IModuleManager* modulemanager ) = 0;
     virtual void release() = 0;
     virtual void update() = 0;
+    virtual void render() = 0;
     virtual void registerEntity( const char *classname, EntityFactoryFn *factory ) = 0;
     virtual IEntity *createEntity( const char *classname ) = 0;
     virtual void spawnEntity( IEntity *ent ) = 0;
     virtual void removeEntity( IEntity *ent ) = 0;
     virtual IEntity *findEntityByClass( const char *classname ) = 0;
     virtual EntityMap findEntitiesByClass( const char *classname ) = 0;
+    virtual void sort() = 0;
+
 };
 
 extern IEntityManagerModule *entitymanager;

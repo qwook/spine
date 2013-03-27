@@ -10,19 +10,28 @@
  
  */
 
-#ifndef CCLIENTMODULE_H
-#define CCLIENTMODULE_H
+#ifndef CONCOMMAND
+#define CONCOMMAND
 
-#include "iclient.h"
+#include "iutil.h"
 
-class CClientModule : public IClientModule {
+typedef void(*concommand_fn)(const char *cmd, char *args[]);
+typedef std::map<const char *, concommand_fn, cmp_str> ConCommandList;
+
+extern ConCommandList concommands;
+
+class CreateConsoleCommand {
 public:
-    virtual void init( IModuleManager* modulemanager );
-    virtual void release();
-    virtual void update();
-    virtual void render();
-    virtual void mouseDown(int mouseKey);
-    virtual void mouseUp(int mouseKey);
+    CreateConsoleCommand(const char *name, concommand_fn callback) {
+        printf("CMD! %s\n", name);
+        char *args[5] = {"hello", "world!"};
+        callback("yo", args);
+    };
 };
+
+#define CONCOMMAND(name) \
+void name##_concommand(const char *cmd, char* args[]); \
+CreateConsoleCommand name##_ccmd( #name, name##_concommand ); \
+void name##_concommand(const char *cmd, char* args[])
 
 #endif

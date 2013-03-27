@@ -14,7 +14,6 @@
 
 #include "imath.h"
 #include "ifilesystem.h"
-#include "iclient.h"
 #include "graphics.h"
 
 #include <iostream>
@@ -38,12 +37,7 @@ Font *test;
 
 void MousePressedCallback(int i, int b)
 {
-    if (b == 0) {
-        client->mouseDown(i);
-    }
-    else if (b == 1) {
-        client->mouseUp(i);
-    }
+    printf("%d %d\n", i, b);
 }
 
 void CGraphicsModule::initDriver( short width, short height )

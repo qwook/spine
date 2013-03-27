@@ -20,6 +20,12 @@ void CEntityManagerModule::update() {
     }
 }
 
+void CEntityManagerModule::render() {
+    for ( EntityMap::iterator i = entityMap.begin(); i != entityMap.end(); i++ ) {
+        (*i)->render();
+    }
+}
+
 void CEntityManagerModule::registerEntity( const char *classname, EntityFactoryFn *factory ) {
     factoryMap[classname] = factory;
 }
@@ -30,10 +36,12 @@ IEntity *CEntityManagerModule::createEntity( const char *classname ) {
 
 void CEntityManagerModule::spawnEntity( IEntity *ent ) {
     entityMap.push_back(ent);
+    sort();
 }
 
 void CEntityManagerModule::removeEntity( IEntity *ent ) {
     entityMap.erase(std::remove(entityMap.begin(), entityMap.end(), ent), entityMap.end());
+    sort();
 }
 
 IEntity *CEntityManagerModule::findEntityByClass(const char *classname) {
@@ -55,6 +63,30 @@ CEntityManagerModule::EntityMap CEntityManagerModule::findEntitiesByClass(const 
     return classmap;
 }
 
+// Sort according to z-index.
+bool zIndexSort (IEntity *ient, IEntity *jent) {
+    long i, j;
+    i = ient->getZIndex();
+    j = jent->getZIndex();
+    
+    if (i < 0 && j >= 0) {
+        return false;
+    }
+    
+    if (i >= 0 && j < 0) {
+        return true;
+    }
+    
+    if (i < 0 && j < 0) {
+        return i>j;
+    }
+    
+    return i<j;
+}
+
+void CEntityManagerModule::sort() {
+    //std::sort(entityMap.begin(), entityMap.end(), zIndexSort);
+}
 
 void CEntityManagerModule::init( IModuleManager* modulemanager ) {
 }

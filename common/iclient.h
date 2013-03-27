@@ -20,6 +20,9 @@ public:
     virtual void init( IModuleManager* modulemanager ) = 0;
     virtual void release() = 0;
     virtual void update() = 0;
+    virtual void render() = 0;
+    virtual void mouseDown(int mouseKey) = 0;
+    virtual void mouseUp(int mouseKey) = 0;
 };
 
 extern IClientModule *client;
